@@ -1,6 +1,21 @@
 # Introdução
 
-Texto descritivo introdutório apresentando a visão geral do projeto a ser desenvolvido considerando o contexto em que ele se insere, os objetivos gerais, a justificativa e o público-alvo do projeto.
+Ondas de calor: um desafio crescente para a região sudeste do Brasil.
+
+Caracterizadas por temperaturas anormalmente elevadas por períodos prolongados, as ondas de calor representam uma séria ameaça à saúde humana da região.
+
+Este projeto, utilizando o dataset [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region?resource=download&select=southeast.csv), busca analisar em detalhes as ondas de calor na região, com o objetivo de:
+
+1. Quantificar o Impacto das Ondas de Calor na Mortalidade:
+
+- Analisar a relação entre temperatura e mortalidade:
+  - Identificar os grupos mais vulneráveis às ondas de calor.
+  - Quantificar o aumento da mortalidade durante eventos de calor extremo.
+  - Avaliar o efeito de outros fatores, como idade, sexo e comorbidades.
+- Desenvolver modelos preditivos para estimar o aumento da mortalidade:
+  - Prever o número de mortes em excesso durante ondas de calor.
+  - Identificar áreas de maior risco.
+  - Auxiliar na tomada de decisões para proteger a saúde pública.
 
 ## Problema
 
@@ -12,6 +27,10 @@ Descreva ainda o contexto em que essa aplicação será usada, se houver: empres
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+
+A região sudeste do Brasil enfrenta um desafio crescente: as ondas de calor. Caracterizadas por temperaturas anormalmente elevadas por períodos prolongados, elas representam uma séria ameaça à saúde humana, com impactos significantes na mortalidade, especialmente em grupos vulneráveis. O problema central reside na dificuldade de prever com precisão a ocorrência e a severidade das ondas de calor. Essa imprevisibilidade limita a capacidade de tomar medidas proativas para mitigar seus impactos negativos. A falta de dados precisos e ferramentas de previsão limita a capacidade de tomar medidas eficazes para proteger a população.
+
+Portanto, este projeto busca contribuir para a solução do problema através da análise de dados históricos e da aplicação de técnicas de Machine Learning. O objetivo é desenvolver modelos robustos para prever ondas de calor com maior precisão, possibilitando ações proativas e mitigadoras.
 
 ## Questão de pesquisa
 
@@ -32,6 +51,38 @@ Lembre-se que, à medida que a pesquisa/experimentação evolui, os objetivos po
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+
+### Objetivo Geral:
+
+Analisar e prever ondas de calor na região sudeste do Brasil utilizando o dataset "Hourly Weather Surface Brazil Southeast Region" e técnicas de Machine Learning.
+
+### Objetivos Específicos:
+
+1. Quantificar o Impacto das Ondas de Calor na Mortalidade:
+
+- Analisar a série temporal de dados climáticos e de mortalidade:
+- Identificar padrões e tendências.
+- Quantificar o aumento da mortalidade durante ondas de calor.
+- Avaliar a influência de outros fatores, como idade, sexo e comorbidades.
+
+2. Desenvolver modelos de Machine Learning para prever o aumento da mortalidade:
+- Prever o número de mortes em excesso durante ondas de calor.
+- Identificar áreas de maior risco.
+- Auxiliar na tomada de decisões para proteger a saúde pública.
+
+3. Evolução dos Objetivos:
+
+Os objetivos específicos podem ser revisados e aprimorados ao longo da pesquisa, de acordo com:
+
+- Resultados da análise exploratória dos dados.
+- Disponibilidade de novos dados e recursos.
+- Descobertas e insights obtidos durante a investigação.
+
+4. Considerações Éticas e Sociais:
+
+- A pesquisa será conduzida em conformidade com os princípios éticos da pesquisa científica.
+- Os resultados da pesquisa serão divulgados de forma transparente e acessível à comunidade científica e à sociedade em geral.
+- Os impactos sociais e éticos da pesquisa serão considerados e mitigados.
 
 ## Justificativa
 
