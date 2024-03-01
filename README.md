@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# MUDANÇAS CLIMÁTICAS
 
 `CURSO: Sistemas de Informação`
 
@@ -10,16 +10,16 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Caroline Clarissa Leite de Aguiar
+* Krysthyan Jhonny Ramos da Silva
+* Maria Clara Bethonico Terra
 * Nome completo do aluno 4
 * Nome completo do aluno 5
 * Nome completo do aluno 6
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 # Planejamento
 
