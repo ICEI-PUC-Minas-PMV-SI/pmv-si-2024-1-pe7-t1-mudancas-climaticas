@@ -140,6 +140,23 @@ Descreva quem serão as pessoas que poderão se beneficiar com a sua investigaç
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
+Perfil dos Usuários e sua Relação com a Tecnologia:
+
+Agricultores e Produtores Rurais:
+Agricultores e produtores rurais têm conhecimento prático das condições climáticas que afetam suas safras, mas podem não possuir conhecimento científico especializado em meteorologia. Eles estão abertos a adotar tecnologias que os ajudem a melhorar a produtividade e a mitigar os riscos climáticos em suas operações agrícolas.
+
+
+Gestores de recursos naturais e ambientais possuem um conhecimento mais profundo dos padrões climáticos e sua interação com os ecossistemas naturais. Estão familiarizados com tecnologias de monitoramento ambiental e estão abertos à adoção de soluções baseadas em machine learning para melhorar a gestão e conservação dos recursos naturais.
+
+
+Cientistas e pesquisadores em climatologia têm um alto nível de especialização na área e estão interessados em explorar novas abordagens, como machine learning, para melhorar a precisão das previsões climáticas.
+
+
+Administradores públicos e tomadores de decisão possuem um entendimento básico das questões climáticas e estão focados em políticas públicas e tomada de decisões relacionadas ao meio ambiente e desenvolvimento sustentável. Reconhecem a importância da tecnologia como uma ferramenta para embasar suas decisões e políticas.
+
+
+O público em geral possui um entendimento básico das mudanças climáticas e está aberto a utilizar tecnologias que os ajudem a se preparar para eventos climáticos extremos e tomar decisões informadas sobre suas atividades diárias. Geralmente buscam facilidade de uso e acesso simplificado às informações climáticas.
+
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
 > - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
