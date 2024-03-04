@@ -12,10 +12,9 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 * Caroline Clarissa Leite de Aguiar
 * Krysthyan Jhonny Ramos da Silva
+* Lucas de Paula Martins
 * Maria Clara Bethonico Terra
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+
 
 ## Orientador
 
