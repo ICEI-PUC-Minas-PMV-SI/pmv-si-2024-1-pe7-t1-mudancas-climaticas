@@ -88,6 +88,49 @@ Os objetivos específicos podem ser revisados e aprimorados ao longo da pesquisa
 
 Descreva a importância ou a motivação para trabalhar com o conjunto de dados escolhido. Indique as razões pelas quais você escolheu seus objetivos específicos, as razões para aprofundar o estudo do problema identificado e qual o impacto que tal problema provoca na sociedade. Lembre-se de quantificar (com dados reais e suas respectivas fontes) este impacto.
 
+
+
+### Justificativa para o Trabalho com Dados Climáticos e Machine Learning
+
+A compreensão precisa do clima é fundamental para a vida cotidiana, para a agricultura, para a prevenção de desastres naturais e para muitos outros aspectos da sociedade. No entanto, os padrões climáticos estão se tornando cada vez mais voláteis devido às mudanças climáticas, tornando essencial o desenvolvimento de métodos avançados para previsão e compreensão do clima. Portanto, a proposta de utilizar machine learning sobre dados climáticos dos anos anteriores é altamente relevante e motivada por diversas razões.
+
+Importância/Motivação:
+
+A precisão das previsões climáticas é essencial para permitir que as pessoas se preparem adequadamente para condições meteorológicas extremas, como ondas de calor, tempestades ou secas. Além disso, a capacidade de antecipar mudanças climáticas a longo prazo é crucial para o planejamento urbano, agrícola e de infraestrutura.
+
+Razões para Escolher Objetivos Específicos:
+
+Precisão das Previsões: Utilizando técnicas de machine learning sobre dados climáticos históricos, é possível identificar padrões complexos e sutis que podem escapar das abordagens tradicionais de modelagem climática. Isso leva a previsões mais precisas e confiáveis.
+
+Adaptação e Mitigação: Ao compreender os padrões climáticos com maior precisão, as comunidades podem se adaptar melhor às mudanças climáticas e implementar medidas de mitigação mais eficazes.
+
+Alerta de Desastres Naturais: Modelos de machine learning podem ajudar na detecção precoce de eventos climáticos extremos, como furacões e inundações, permitindo a evacuação e o planejamento de resposta a desastres de forma mais eficaz.
+
+Razões para Aprofundar o Estudo do Problema Identificado:
+
+Mudanças Climáticas: As mudanças climáticas estão aumentando a frequência e a intensidade de eventos climáticos extremos em muitas regiões do mundo. Compreender essas mudanças e seus impactos é essencial para a adaptação e mitigação.
+
+Impacto Socioeconômico: Eventos climáticos extremos podem ter um impacto devastador nas economias locais e nacionais, causando danos a propriedades, infraestrutura e recursos naturais. Prever esses eventos com maior precisão pode reduzir o impacto econômico e social.
+
+Saúde Pública: O clima extremo pode afetar a saúde das pessoas, aumentando o risco de doenças relacionadas ao calor, poluição do ar e disseminação de doenças infecciosas. Melhores previsões climáticas podem ajudar na implementação de medidas de saúde pública adequadas.
+
+Impacto na Sociedade:
+
+Redução de Riscos: Previsões climáticas mais precisas permitem que as comunidades se preparem melhor para eventos climáticos extremos, reduzindo assim os riscos para a vida e a propriedade.
+
+Resiliência e Sustentabilidade: Ao compreender melhor os padrões climáticos, as comunidades podem desenvolver estratégias mais resilientes e sustentáveis ​​para lidar com as mudanças climáticas e proteger o meio ambiente.
+
+Melhoria da Qualidade de Vida: A capacidade de se preparar adequadamente para condições climáticas extremas pode melhorar significativamente a qualidade de vida das pessoas, garantindo acesso a recursos essenciais, como água potável e alimentos, mesmo em situações adversas.
+
+Referências:
+
+IPCC - Painel Intergovernamental sobre Mudanças Climáticas
+NOAA - National Oceanic and Atmospheric Administration
+WMO - World Meteorological Organization
+Estudos científicos e relatórios governamentais sobre mudanças climáticas e previsões climáticas.
+
+
+
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
