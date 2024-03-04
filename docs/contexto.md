@@ -30,7 +30,7 @@ A análise da variabilidade climática na região sudeste do Brasil é um tema c
 
 Referências:
 
-- [IPCC - Painel Intergovernamental sobre Mudanças Climáticas](https://www.ipcc.ch/report/ar6/wg1/)
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: https://www.ipcc.ch/report/ar6/wg1/. Acesso em: [03/03/2024].
 - Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
 - CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
@@ -76,7 +76,7 @@ Analisar a variabilidade climática na região sudeste do Brasil, com foco em on
 - Os impactos sociais e éticos da pesquisa serão considerados e mitigados.
 
 Referências:
-- [Blog Mettzer](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/. Acesso em 02/03/2024.
 - Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 
 ## Justificativa
@@ -232,13 +232,14 @@ Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analí
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
 
 - Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/. Acesso em 02/03/2024.
 - CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
-- IPCC - Painel Intergovernamental sobre Mudanças Climáticas: [https://es.wiktionary.org/wiki/removido](https://www.ipcc.ch/report/ar6/wg1/)
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: https://www.ipcc.ch/report/ar6/wg1/. Acesso em: [03/03/2024].
 - Kaggle: [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
 - Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 - Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
-- [Blog Mettzer](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+
 
 
 
