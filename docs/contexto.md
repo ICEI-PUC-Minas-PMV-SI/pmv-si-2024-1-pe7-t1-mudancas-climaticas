@@ -30,7 +30,7 @@ A análise da variabilidade climática na região sudeste do Brasil é um tema c
 
 Referências:
 
-- IPCC - Painel Intergovernamental sobre Mudanças Climáticas: [https://es.wiktionary.org/wiki/removido](https://www.ipcc.ch/report/ar6/wg1/)
+- [IPCC - Painel Intergovernamental sobre Mudanças Climáticas](https://www.ipcc.ch/report/ar6/wg1/)
 - Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
 - CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
