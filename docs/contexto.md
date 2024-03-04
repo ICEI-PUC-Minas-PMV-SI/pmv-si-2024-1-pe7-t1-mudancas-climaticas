@@ -116,10 +116,6 @@ NOAA. (2020). National Oceanic and Atmospheric Administration.
 WMO. (2022). World Meteorological Organization.
 
 
-
-
-
-
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
@@ -131,7 +127,7 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 Perfil dos Usuários e sua Relação com a Tecnologia:
 
-Agricultores e Produtores Rurais:
+
 Agricultores e produtores rurais têm conhecimento prático das condições climáticas que afetam suas safras, mas podem não possuir conhecimento científico especializado em meteorologia. Eles estão abertos a adotar tecnologias que os ajudem a melhorar a produtividade e a mitigar os riscos climáticos em suas operações agrícolas.
 
 
