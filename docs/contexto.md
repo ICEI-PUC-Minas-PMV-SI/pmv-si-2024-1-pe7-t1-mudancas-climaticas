@@ -81,31 +81,23 @@ Referências:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com o conjunto de dados escolhido. Indique as razões pelas quais você escolheu seus objetivos específicos, as razões para aprofundar o estudo do problema identificado e qual o impacto que tal problema provoca na sociedade. Lembre-se de quantificar (com dados reais e suas respectivas fontes) este impacto.
-
-
-
-### Justificativa para o Trabalho com Dados Climáticos e Machine Learning
-
 A compreensão precisa dos padrões climáticos é crucial para diversas esferas da sociedade, incluindo planejamento urbano, agrícola e prevenção de desastres naturais (Fonte: WMO, 2020). No entanto, as mudanças climáticas têm aumentado a volatilidade desses padrões, tornando essencial o desenvolvimento de métodos avançados de previsão (IPCC, 2019). Nesse contexto, a aplicação de técnicas de machine learning em dados climáticos históricos se mostra relevante (NOAA, 2018).
-
-Motivação:
 
 A precisão das previsões climáticas é fundamental para a preparação e adaptação às condições meteorológicas extremas (Fonte: IPCC, 2018). Além disso, a capacidade de antecipar mudanças climáticas de longo prazo é essencial para o planejamento eficaz em diversas áreas (WMO, 2021).
 
-Objetivos Específicos:
+### Objetivos Específicos:
 
-Precisão das Previsões: A utilização de machine learning em dados climáticos pode identificar padrões sutis, resultando em previsões mais precisas e confiáveis (NOAA, 2019).
+- Precisão das Previsões: A utilização de machine learning em dados climáticos pode identificar padrões sutis, resultando em previsões mais precisas e confiáveis (NOAA, 2019).
 
-Adaptação e Mitigação: Compreender os padrões climáticos permite uma melhor adaptação às mudanças climáticas e implementação de medidas de mitigação mais eficazes (IPCC, 2020).
+- Adaptação e Mitigação: Compreender os padrões climáticos permite uma melhor adaptação às mudanças climáticas e implementação de medidas de mitigação mais eficazes (IPCC, 2020).
 
-Alerta de Desastres Naturais: Modelos de machine learning podem auxiliar na detecção precoce de eventos climáticos extremos, facilitando o planejamento e a resposta a desastres (WMO, 2019).
+- Alerta de Desastres Naturais: Modelos de machine learning podem auxiliar na detecção precoce de eventos climáticos extremos, facilitando o planejamento e a resposta a desastres (WMO, 2019).
 
-Profundidade do Estudo:
+### Profundidade do Estudo:
 
 O estudo das mudanças climáticas e seus impactos é crucial, especialmente considerando o aumento da frequência e intensidade de eventos climáticos extremos (IPCC, 2021). Além disso, tais eventos têm um impacto significativo na saúde pública e na economia (Fonte: NOAA, 2020).
 
-Impacto na Sociedade:
+### Impacto na Sociedade:
 
 A melhoria das previsões climáticas reduz os riscos para a vida e a propriedade, aumentando a resiliência das comunidades (WMO, 2022). Além disso, contribui para uma melhor qualidade de vida ao garantir acesso a recursos essenciais, mesmo em situações adversas (IPCC, 2017).
 
@@ -115,38 +107,24 @@ IPCC. (2017). Relatório Especial sobre Aquecimento Global de 1,5 °C.
 NOAA. (2020). National Oceanic and Atmospheric Administration.
 WMO. (2022). World Meteorological Organization.
 
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
-Descreva quem serão as pessoas que poderão se beneficiar com a sua investigação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-Perfil dos Usuários e sua Relação com a Tecnologia:
+### Perfil dos Usuários e sua Relação com a Tecnologia:
 
 
-Agricultores e produtores rurais têm conhecimento prático das condições climáticas que afetam suas safras, mas podem não possuir conhecimento científico especializado em meteorologia. Eles estão abertos a adotar tecnologias que os ajudem a melhorar a produtividade e a mitigar os riscos climáticos em suas operações agrícolas.
+- Agricultores e produtores rurais têm conhecimento prático das condições climáticas que afetam suas safras, mas podem não possuir conhecimento científico especializado em meteorologia. Eles estão abertos a adotar tecnologias que os ajudem a melhorar a produtividade e a mitigar os riscos climáticos em suas operações agrícolas.
 
 
-Gestores de recursos naturais e ambientais possuem um conhecimento mais profundo dos padrões climáticos e sua interação com os ecossistemas naturais. Estão familiarizados com tecnologias de monitoramento ambiental e estão abertos à adoção de soluções baseadas em machine learning para melhorar a gestão e conservação dos recursos naturais.
+- Gestores de recursos naturais e ambientais possuem um conhecimento mais profundo dos padrões climáticos e sua interação com os ecossistemas naturais. Estão familiarizados com tecnologias de monitoramento ambiental e estão abertos à adoção de soluções baseadas em machine learning para melhorar a gestão e conservação dos recursos naturais.
 
 
-Cientistas e pesquisadores em climatologia têm um alto nível de especialização na área e estão interessados em explorar novas abordagens, como machine learning, para melhorar a precisão das previsões climáticas.
+- Cientistas e pesquisadores em climatologia têm um alto nível de especialização na área e estão interessados em explorar novas abordagens, como machine learning, para melhorar a precisão das previsões climáticas.
 
 
-Administradores públicos e tomadores de decisão possuem um entendimento básico das questões climáticas e estão focados em políticas públicas e tomada de decisões relacionadas ao meio ambiente e desenvolvimento sustentável. Reconhecem a importância da tecnologia como uma ferramenta para embasar suas decisões e políticas.
+- Administradores públicos e tomadores de decisão possuem um entendimento básico das questões climáticas e estão focados em políticas públicas e tomada de decisões relacionadas ao meio ambiente e desenvolvimento sustentável. Reconhecem a importância da tecnologia como uma ferramenta para embasar suas decisões e políticas.
 
 
 O público em geral possui um entendimento básico das mudanças climáticas e está aberto a utilizar tecnologias que os ajudem a se preparar para eventos climáticos extremos e tomar decisões informadas sobre suas atividades diárias. Geralmente buscam facilidade de uso e acesso simplificado às informações climáticas.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 ## Estado da arte
 
@@ -206,8 +184,8 @@ Todos os atributos são numéricos, com exceção de "Data" e "Qualidade do Ar".
 - O dataset está disponível em formato CSV, o que facilita o acesso e a manipulação dos dados.
 
 ## Referências:
-- Kaggle: [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
-- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- Kaggle - Hourly Weather Surface Brazil Southeast Region. Disponível em: <https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region>
+- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. Disponível em: <https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region>
 
 
 # Canvas analítico
@@ -221,14 +199,15 @@ Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analí
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
 
-- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
-- Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/. Acesso em 02/03/2024.
+- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. Disponível em: <https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region>
+- Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: <https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/>. Acesso em 02/03/2024.
 - CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
-- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: https://www.ipcc.ch/report/ar6/wg1/. Acesso em: [03/03/2024].
-- Kaggle: [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: <https://www.ipcc.ch/report/ar6/wg1/>. Acesso em: [03/03/2024].
+- Kaggle - Hourly Weather Surface Brazil Southeast Region. Disponível em: <https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region>
 - Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 - Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
+
 
 
 
