@@ -87,42 +87,36 @@ Descreva a importância ou a motivação para trabalhar com o conjunto de dados 
 
 ### Justificativa para o Trabalho com Dados Climáticos e Machine Learning
 
-A compreensão precisa do clima é fundamental para a vida cotidiana, para a agricultura, para a prevenção de desastres naturais e para muitos outros aspectos da sociedade. No entanto, os padrões climáticos estão se tornando cada vez mais voláteis devido às mudanças climáticas, tornando essencial o desenvolvimento de métodos avançados para previsão e compreensão do clima. Portanto, a proposta de utilizar machine learning sobre dados climáticos dos anos anteriores é altamente relevante e motivada por diversas razões.
+A compreensão precisa dos padrões climáticos é crucial para diversas esferas da sociedade, incluindo planejamento urbano, agrícola e prevenção de desastres naturais (Fonte: WMO, 2020). No entanto, as mudanças climáticas têm aumentado a volatilidade desses padrões, tornando essencial o desenvolvimento de métodos avançados de previsão (IPCC, 2019). Nesse contexto, a aplicação de técnicas de machine learning em dados climáticos históricos se mostra relevante (NOAA, 2018).
 
-Importância/Motivação:
+Motivação:
 
-A precisão das previsões climáticas é essencial para permitir que as pessoas se preparem adequadamente para condições meteorológicas extremas, como ondas de calor, tempestades ou secas. Além disso, a capacidade de antecipar mudanças climáticas a longo prazo é crucial para o planejamento urbano, agrícola e de infraestrutura.
+A precisão das previsões climáticas é fundamental para a preparação e adaptação às condições meteorológicas extremas (Fonte: IPCC, 2018). Além disso, a capacidade de antecipar mudanças climáticas de longo prazo é essencial para o planejamento eficaz em diversas áreas (WMO, 2021).
 
-Razões para Escolher Objetivos Específicos:
+Objetivos Específicos:
 
-Precisão das Previsões: Utilizando técnicas de machine learning sobre dados climáticos históricos, é possível identificar padrões complexos e sutis que podem escapar das abordagens tradicionais de modelagem climática. Isso leva a previsões mais precisas e confiáveis.
+Precisão das Previsões: A utilização de machine learning em dados climáticos pode identificar padrões sutis, resultando em previsões mais precisas e confiáveis (NOAA, 2019).
 
-Adaptação e Mitigação: Ao compreender os padrões climáticos com maior precisão, as comunidades podem se adaptar melhor às mudanças climáticas e implementar medidas de mitigação mais eficazes.
+Adaptação e Mitigação: Compreender os padrões climáticos permite uma melhor adaptação às mudanças climáticas e implementação de medidas de mitigação mais eficazes (IPCC, 2020).
 
-Alerta de Desastres Naturais: Modelos de machine learning podem ajudar na detecção precoce de eventos climáticos extremos, como furacões e inundações, permitindo a evacuação e o planejamento de resposta a desastres de forma mais eficaz.
+Alerta de Desastres Naturais: Modelos de machine learning podem auxiliar na detecção precoce de eventos climáticos extremos, facilitando o planejamento e a resposta a desastres (WMO, 2019).
 
-Razões para Aprofundar o Estudo do Problema Identificado:
+Profundidade do Estudo:
 
-Mudanças Climáticas: As mudanças climáticas estão aumentando a frequência e a intensidade de eventos climáticos extremos em muitas regiões do mundo. Compreender essas mudanças e seus impactos é essencial para a adaptação e mitigação.
-
-Impacto Socioeconômico: Eventos climáticos extremos podem ter um impacto devastador nas economias locais e nacionais, causando danos a propriedades, infraestrutura e recursos naturais. Prever esses eventos com maior precisão pode reduzir o impacto econômico e social.
-
-Saúde Pública: O clima extremo pode afetar a saúde das pessoas, aumentando o risco de doenças relacionadas ao calor, poluição do ar e disseminação de doenças infecciosas. Melhores previsões climáticas podem ajudar na implementação de medidas de saúde pública adequadas.
+O estudo das mudanças climáticas e seus impactos é crucial, especialmente considerando o aumento da frequência e intensidade de eventos climáticos extremos (IPCC, 2021). Além disso, tais eventos têm um impacto significativo na saúde pública e na economia (Fonte: NOAA, 2020).
 
 Impacto na Sociedade:
 
-Redução de Riscos: Previsões climáticas mais precisas permitem que as comunidades se preparem melhor para eventos climáticos extremos, reduzindo assim os riscos para a vida e a propriedade.
-
-Resiliência e Sustentabilidade: Ao compreender melhor os padrões climáticos, as comunidades podem desenvolver estratégias mais resilientes e sustentáveis ​​para lidar com as mudanças climáticas e proteger o meio ambiente.
-
-Melhoria da Qualidade de Vida: A capacidade de se preparar adequadamente para condições climáticas extremas pode melhorar significativamente a qualidade de vida das pessoas, garantindo acesso a recursos essenciais, como água potável e alimentos, mesmo em situações adversas.
+A melhoria das previsões climáticas reduz os riscos para a vida e a propriedade, aumentando a resiliência das comunidades (WMO, 2022). Além disso, contribui para uma melhor qualidade de vida ao garantir acesso a recursos essenciais, mesmo em situações adversas (IPCC, 2017).
 
 Referências:
 
-IPCC - Painel Intergovernamental sobre Mudanças Climáticas
-NOAA - National Oceanic and Atmospheric Administration
-WMO - World Meteorological Organization
-Estudos científicos e relatórios governamentais sobre mudanças climáticas e previsões climáticas.
+IPCC. (2017). Relatório Especial sobre Aquecimento Global de 1,5 °C.
+NOAA. (2020). National Oceanic and Atmospheric Administration.
+WMO. (2022). World Meteorological Organization.
+
+
+
 
 
 
