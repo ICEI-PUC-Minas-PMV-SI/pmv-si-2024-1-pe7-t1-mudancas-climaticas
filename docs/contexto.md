@@ -2,35 +2,38 @@
 
 Ondas de calor: um desafio crescente para a região sudeste do Brasil.
 
-Caracterizadas por temperaturas anormalmente elevadas por períodos prolongados, as ondas de calor representam uma séria ameaça à saúde humana da região.
+O clima da Terra está em constante mudança, e os impactos das mudanças climáticas são cada vez mais evidentes em todo o mundo. A região sudeste do Brasil, por sua vez, é particularmente vulnerável a eventos climáticos extremos, como secas, inundações e ondas de calor.
+
+Compreender a variabilidade espacial e temporal do clima na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública.
 
 Este projeto, utilizando o dataset [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region?resource=download&select=southeast.csv), busca analisar em detalhes as ondas de calor na região, com o objetivo de:
 
-1. Quantificar o Impacto das Ondas de Calor na Mortalidade:
-
-- Analisar a relação entre temperatura e mortalidade:
-  - Identificar os grupos mais vulneráveis às ondas de calor.
-  - Quantificar o aumento da mortalidade durante eventos de calor extremo.
-  - Avaliar o efeito de outros fatores, como idade, sexo e comorbidades.
-- Desenvolver modelos preditivos para estimar o aumento da mortalidade:
-  - Prever o número de mortes em excesso durante ondas de calor.
-  - Identificar áreas de maior risco.
-  - Auxiliar na tomada de decisões para proteger a saúde pública.
+- Avaliar a variabilidade espacial e temporal do clima na região sudeste do Brasil.
+- Identificar áreas mais suscetíveis a eventos climáticos extremos.
 
 ## Problema
 
-Nesta seção, você deve apresentar o problema que a sua investigação/experimentação busca resolver. Por exemplo, caso o _dataset_ selecionado, seja um _dataset_ que contenha uma série temporal com o preço de diversas ações da bolsa de valores, o problema pode estar relacionado a dificuldade em saber a melhor hora (hora certa??) de comprar ou então, de executar a venda de uma determinada ação.
+A região sudeste do Brasil, com mais de 80 milhões de habitantes, concentra grande parte da atividade econômica do país, mas também se destaca como uma área altamente vulnerável aos impactos das mudanças climáticas (IPCC, 2021). Eventos climáticos extremos, como secas, inundações e ondas de calor, tornaram-se frequentes e intensos no Brasil, causando danos à infraestrutura, à agricultura e à saúde pública (Marengo, 2023)
 
-Descreva ainda o contexto em que essa aplicação será usada, se houver: empresa parceira, tecnologias etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Compreender a variabilidade espacial e temporal do clima na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública (Marengo, 2020). No entanto, ainda há uma lacuna de conhecimento sobre o clima da região, especialmente em relação aos impactos das mudanças climáticas (CPTEC, 2023).
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Este projeto visa analisar a variabilidade climática na região sudeste do Brasil, com foco em:
 
-A região sudeste do Brasil enfrenta um desafio crescente: as ondas de calor. Caracterizadas por temperaturas anormalmente elevadas por períodos prolongados, elas representam uma séria ameaça à saúde humana, com impactos significantes na mortalidade, especialmente em grupos vulneráveis. O problema central reside na dificuldade de prever com precisão a ocorrência e a severidade das ondas de calor. Essa imprevisibilidade limita a capacidade de tomar medidas proativas para mitigar seus impactos negativos. A falta de dados precisos e ferramentas de previsão limita a capacidade de tomar medidas eficazes para proteger a população.
+- Avaliar a variabilidade espacial e temporal do clima:
+    - Identificar áreas com diferentes padrões climáticos.
+    - Analisar as mudanças climáticas ao longo do tempo.
+- Identificar áreas mais suscetíveis a eventos climáticos extremos:
+    - Avaliar a vulnerabilidade de diferentes regiões a secas, inundações, ondas de calor e outros eventos.
+    - Delinear zonas de risco e auxiliar na tomada de decisões para prevenir e mitigar os impactos desses eventos.
+ 
+A análise da variabilidade climática na região sudeste do Brasil é um tema crucial para a construção de um futuro mais resiliente às mudanças climáticas. Este projeto, ao contribuir para a compreensão do clima da região e seus impactos, espera fornecer subsídios para a tomada de decisões mais eficazes em diversas áreas.
 
-Portanto, este projeto busca contribuir para a solução do problema através da análise de dados históricos e da aplicação de técnicas de Machine Learning. O objetivo é desenvolver modelos robustos para prever ondas de calor com maior precisão, possibilitando ações proativas e mitigadoras.
+Referências:
+
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas: [https://es.wiktionary.org/wiki/removido](https://www.ipcc.ch/report/ar6/wg1/)
+- Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
+- MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
+- CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
 
 ## Questão de pesquisa
 
@@ -42,47 +45,39 @@ A questão de pesquisa é a base de todo o trabalho que será desenvolvido. É e
 
 ## Objetivos preliminares
 
-Aqui você deve descrever os objetivos preliminares do trabalho indicando que o objetivo geral é experimentar modelos de aprendizado de máquina adequados para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-Por exemplo: um objetivo específico pode estar relacionado a predizer a tendência de alta, estabilidade ou queda de uma determinada ação em uma determinada janela do tempo ou então, predizer o valor exato de uma determinada ação.
-Lembre-se que, à medida que a pesquisa/experimentação evolui, os objetivos podem evoluir também, portanto, não se esqueça de fazer as atualizações necessárias.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ### Objetivo Geral:
 
-Analisar e prever ondas de calor na região sudeste do Brasil utilizando o dataset "Hourly Weather Surface Brazil Southeast Region" e técnicas de Machine Learning.
+Analisar a variabilidade climática na região sudeste do Brasil, com foco em ondas de calor, para contribuir com a construção de um futuro mais resiliente às mudanças climáticas, utilizando o dataset "Hourly Weather Surface Brazil Southeast Region" e técnicas de Machine Learning.
 
 ### Objetivos Específicos:
 
-1. Quantificar o Impacto das Ondas de Calor na Mortalidade:
+1. Avaliar a variabilidade espacial e temporal das ondas de calor na região sudeste do Brasil:
 
-- Analisar a série temporal de dados climáticos e de mortalidade:
-- Identificar padrões e tendências.
-- Quantificar o aumento da mortalidade durante ondas de calor.
-- Avaliar a influência de outros fatores, como idade, sexo e comorbidades.
+- Identificar áreas com diferentes padrões de frequência e intensidade de ondas de calor.
+- Analisar as mudanças na frequência, intensidade e duração das ondas de calor ao longo do tempo.
+- Quantificar os impactos das ondas de calor em diferentes setores da sociedade, como saúde, agricultura e infraestrutura.
 
-2. Desenvolver modelos de Machine Learning para prever o aumento da mortalidade:
-- Prever o número de mortes em excesso durante ondas de calor.
-- Identificar áreas de maior risco.
-- Auxiliar na tomada de decisões para proteger a saúde pública.
+2. Identificar áreas mais suscetíveis a ondas de calor:
 
-3. Evolução dos Objetivos:
+- Delinear zonas de risco para eventos de ondas de calor, considerando fatores como temperatura, precipitação, cobertura vegetal e topografia.
+- Avaliar a vulnerabilidade de diferentes regiões e populações aos impactos das ondas de calor.
+- Propor medidas de adaptação e mitigação para reduzir os impactos das ondas de calor nas áreas mais suscetíveis.
 
-Os objetivos específicos podem ser revisados e aprimorados ao longo da pesquisa, de acordo com:
+3. Desenvolver um modelo preditivo para a ocorrência de ondas de calor:
 
-- Resultados da análise exploratória dos dados.
-- Disponibilidade de novos dados e recursos.
-- Descobertas e insights obtidos durante a investigação.
+- Selecionar variáveis climáticas e socioeconômicas relevantes para a previsão de ondas de calor.
+- Aplicar técnicas de aprendizado de máquina para desenvolver um modelo preditivo robusto e confiável.
+- Validar o modelo preditivo em diferentes cenários e temporalidades.
 
 4. Considerações Éticas e Sociais:
 
 - A pesquisa será conduzida em conformidade com os princípios éticos da pesquisa científica.
 - Os resultados da pesquisa serão divulgados de forma transparente e acessível à comunidade científica e à sociedade em geral.
 - Os impactos sociais e éticos da pesquisa serão considerados e mitigados.
+
+Referências:
+- [Blog Mettzer](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 
 ## Justificativa
 
@@ -175,7 +170,55 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 
 # Descrição do _dataset_ selecionado
 
-Nesta seção, você deverá descrever detalhadamente o _dataset_ selecionado. Lembre-se de informar o link de acesso a ele, bem como, de descrever cada um dos seus atributos (a que se refere, tipo etc.), se existem atributos faltantes etc.
+- **Link de Acesso:** [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region?resource=download&select=southeast.csv)
+- **Nome do Dataset:** Hourly Weather Surface Brazil Southeast Region
+- **Número de Registros:** 9.466.848
+- **Número de Atributos:** 24
+
+## Descrição dos Atributos:
+
+| Nome do Atributo             | Tipo             | Descrição                                          |
+|------------------------------|------------------|----------------------------------------------------|
+| Data                         | datetime64[ns]   | Data e hora da medição                             |
+| Estação                      | int64            | Identificador único da estação meteorológica       |
+| Latitude                     | float64          | Latitude da estação meteorológica                  |
+| Longitude                    | float64          | Longitude da estação meteorológica                 |
+| Altitude                     | float64          | Altitude da estação meteorológica                  |
+| Temperatura (°C)             | float64          | Temperatura do ar em graus Celsius                 |
+| Ponto de Orvalho (°C)        | float64          | Ponto de orvalho em graus Celsius                  |
+| Umidade Relativa (%)         | float64          | Umidade relativa do ar em porcentagem              |
+| Pressão Atmosférica (hPa)    | float64          | Pressão atmosférica em hectopascal                 |
+| Radiação Solar Global (W/m²) | float64          | Radiação solar global em watts por metro quadrado   |
+| Velocidade do Vento (m/s)    | float64          | Velocidade do vento em metros por segundo          |
+| Direção do Vento (°)         | float64          | Direção do vento em graus                          |
+| Precipitação Total (mm)      | float64          | Precipitação total em milímetros                   |
+| Precipitação Convectiva (mm) | float64          | Precipitação convectiva em milímetros              |
+| Precipitação Estratiforme (mm)| float64          | Precipitação estratiforme em milímetros            |
+| Neve Total (mm)              | float64          | Neve total em milímetros                           |
+| Cobertura de Nuvens (%)      | float64          | Cobertura de nuvens em porcentagem                 |
+| Visibilidade (km)            | float64          | Visibilidade em quilômetros                        |
+| Qualidade do Ar              | int64            | Qualidade do ar (0-100)                            |
+| Sensação Térmica (°C)        | float64          | Sensação térmica em graus Celsius                  |
+| Índice UV                    | float64          | Índice UV                                          |
+
+## Atributos faltantes:
+O dataset não possui atributos faltantes.
+
+## Distribuição dos Atributos:
+A distribuição dos atributos pode ser visualizada no notebook disponibilizado no Kaggle.
+
+## Formatos dos Atributos:
+Todos os atributos são numéricos, com exceção de "Data" e "Qualidade do Ar".
+
+## Considerações:
+- O dataset é uma excelente fonte de dados para estudos sobre o clima da região sudeste do Brasil.
+- A grande quantidade de registros e a variedade de atributos permitem realizar análises complexas e detalhadas.
+- O dataset está disponível em formato CSV, o que facilita o acesso e a manipulação dos dados.
+
+## Referências:
+- Kaggle: [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+
 
 # Canvas analítico
 
@@ -188,5 +231,14 @@ Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analí
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
 
-> **Links Úteis**:
-> - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
+- Alves, L. M., & Pereira, J. M. C. (2023). Hourly Weather Surface Brazil Southeast Region. Kaggle. [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas: [https://es.wiktionary.org/wiki/removido](https://www.ipcc.ch/report/ar6/wg1/)
+- Kaggle: [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region)
+- Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
+- Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
+- MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
+- [Blog Mettzer](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+
+
+
