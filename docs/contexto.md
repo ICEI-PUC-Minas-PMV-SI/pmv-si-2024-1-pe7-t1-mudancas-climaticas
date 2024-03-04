@@ -136,6 +136,26 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 > - [Science Direct](https://www.sciencedirect.com/)
 > - [ACM Digital Library](https://dl.acm.org/)
 
+### Abordagens na Literatura para Previsão do Tempo
+
+Nesta seção, apresentaremos um panorama de pesquisas relacionadas à previsão do tempo, com foco em trabalhos que utilizaram dados em contexto similar ao dataset "Hourly Weather Surface Brazil Southeast Region". Abordaremos o problema em questão, detalharemos os datasets, descreveremos as metodologias e algoritmos empregados, as métricas de avaliação utilizadas e os resultados obtidos em cada estudo.
+
+1. Big Data Analytics using Deep LSTM Networks: A Case Study for Weather Prediction
+
+- Problema: O estudo demonstra o potencial de redes neurais LSTM para previsão do tempo, utilizando um conjunto de dados global.
+
+- Dataset: Base de dados pública com dados climáticos de diferentes regiões do mundo, incluindo temperatura, precipitação e vento.
+
+- Abordagem/Algoritmo: Redes Neurais Recorrentes com Memória de Longo Prazo (LSTMs).
+
+- Métricas de Avaliação: Erro Médio Quadrático (MSE) e Coeficiente de Correlação (R²).
+
+- Resultados: O modelo LSTM obteve um MSE de 1,5 °C e um R² de 0,95 na previsão da temperatura, demonstrando sua capacidade de generalização para diferentes regiões.
+
+Referência:
+
+Sangwan, O., & Kumar, A. (2020). Big Data Analytics using Deep LSTM Networks: A Case Study for Weather Prediction. International Journal of Advanced Research in Computer and Communication Engineering, 9(21), 4641-4646. Disponível em : <https://www.researchgate.net/profile/Om-Sangwan/publication/339857640_Big_Data_Analytics_using_Deep_LSTM_Networks_A_Case_Study_for_Weather_Prediction/links/5ea42643a6fdccd79451e02a/Big-Data-Analytics-using-Deep-LSTM-Networks-A-Case-Study-for-Weather-Prediction.pdf>. Acesso em 04.03.2024
+
 # Descrição do _dataset_ selecionado
 
 - **Link de Acesso:** [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region?resource=download&select=southeast.csv)
