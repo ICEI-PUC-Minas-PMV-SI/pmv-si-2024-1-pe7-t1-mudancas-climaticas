@@ -128,14 +128,6 @@ O público em geral possui um entendimento básico das mudanças climáticas e e
 
 ## Estado da arte
 
-Nesta seção, deverão ser descritas outras abordagens identificadas na literatura que foram utilizadas para resolver problemas similares ao problema em questão. Para isso, faça uma pesquisa detalhada e identifique, no mínimo, 3 trabalhos que tenham utilizado dados em contexto similares e então, detalhe: detalhe e contextualize o problema, descreva o _dataset_ utilizado, detalhe quais abordagens/algoritmos foram utilizados (e seus parâmetros), identifique as métricas de avaliação empregadas e fale sobre os resultados obtidos. 
-
-> **Links Úteis**:
-> - [Google Scholar](https://scholar.google.com/)
-> - [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
-> - [Science Direct](https://www.sciencedirect.com/)
-> - [ACM Digital Library](https://dl.acm.org/)
-
 ### Abordagens na Literatura para Previsão do Tempo
 
 Nesta seção, apresentaremos um panorama de pesquisas relacionadas à previsão do tempo, com foco em trabalhos que utilizaram dados em contexto similar ao dataset "Hourly Weather Surface Brazil Southeast Region". Abordaremos o problema em questão, detalharemos os datasets, descreveremos as metodologias e algoritmos empregados, as métricas de avaliação utilizadas e os resultados obtidos em cada estudo.
@@ -155,6 +147,40 @@ Nesta seção, apresentaremos um panorama de pesquisas relacionadas à previsão
 Referência:
 
 Sangwan, O., & Kumar, A. (2020). Big Data Analytics using Deep LSTM Networks: A Case Study for Weather Prediction. International Journal of Advanced Research in Computer and Communication Engineering, 9(21), 4641-4646. Disponível em : <https://www.researchgate.net/profile/Om-Sangwan/publication/339857640_Big_Data_Analytics_using_Deep_LSTM_Networks_A_Case_Study_for_Weather_Prediction/links/5ea42643a6fdccd79451e02a/Big-Data-Analytics-using-Deep-LSTM-Networks-A-Case-Study-for-Weather-Prediction.pdf>. Acesso em 04.03.2024
+
+2. Análise da Variabilidade da Precipitação para o Estado de Minas Gerais (1981-2017).
+
+- Problema: O estado de Minas Gerais, localizado na região sudeste do Brasil, enfrenta desafios significativos relacionados à variabilidade da precipitação, que afetam diretamente diversos setores econômicos e a gestão de recursos hídricos. Compreender a distribuição temporal e espacial da precipitação é essencial para o planejamento adequado e a tomada de decisões em face das mudanças climáticas e seus impactos.
+- Dataset: O estudo utilizou dados de precipitação mensal do produto Climate Hazards Group InfraRed Precipitation with Stations (CHIRPS) para o período de 1981 a 2017. Esses dados oferecem uma cobertura global e são baseados em uma combinação de dados de satélite e observações de estações meteorológicas terrestres.
+  
+- Dataset Utilizado: O estudo utilizou dados de precipitação mensal do produto Climate Hazards Group InfraRed Precipitation with Stations (CHIRPS) para o período de 1981 a 2017. Esses dados oferecem uma cobertura global e são baseados em uma combinação de dados de satélite e observações de estações meteorológicas terrestres.
+
+- Abordagens/Algoritmos Utilizados:
+    - Análise de Componentes Principais (ACP): Utilizada para agrupar o estado de Minas Gerais em regiões homogêneas, removendo redundâncias de informações e facilitando a análise.
+    - Técnica de Mínimos Quadrados: Aplicada para calcular a tendência espacial da precipitação, utilizando a função ltrend no aplicativo Grads.
+    - Estimativa do Início e Término da Estação Chuvosa: Utilizou-se a técnica descrita em Liebmann et al. (2012) para determinar o início e término da estação chuvosa em cada região.
+
+- Métricas de Avaliação: As métricas de avaliação utilizadas no estudo não foram explicitamente mencionadas, mas podem incluir medidas de tendência, como inclinação das linhas de tendência para determinar mudanças na duração da estação chuvosa ao longo do tempo, e comparação das características climáticas entre diferentes regiões de Minas Gerais.
+
+- Resultados Obtidos: Os resultados indicam que Minas Gerais foi dividido em sete regiões climáticas distintas, cada uma apresentando características próprias de precipitação. De forma geral, o estado possui uma estação úmida que ocorre de outubro a março e uma estação seca de abril a setembro. A duração média da estação chuvosa varia nas diferentes regiões, com uma média aproximada de 183 dias. A análise da tendência da duração chuvosa mostra variações significativas entre as regiões, com algumas apresentando uma tendência de diminuição da estação chuvosa, enquanto outras mostram uma tendência de aumento. Esses resultados fornecem insights importantes para o entendimento da variabilidade da precipitação em Minas Gerais e têm implicações significativas para o planejamento e gestão de recursos hídricos.
+
+Referência:
+Pereira, Gabriel et al. "Análise da Variabilidade da Precipitação para o Estado de Minas Gerais (1981-2017)." Revista Brasileira de Climatologia, v. 32, n. 2, p. 213-228, ano não especificado. Disponível em: <https://ojs.ufgd.edu.br/index.php/rbclima/article/view/14068/7309>. Acesso em: 09.03.2024.
+
+3. A Vulnerabilidade Social da Região Sudeste do Brasil Frente à Variabilidade Climática
+
+- Problema: A compreensão da relação entre vulnerabilidade social e os efeitos das mudanças climáticas é crucial para a adaptação e mitigação dos impactos dessas mudanças. O estudo realizado por Kuroki et al. (ano não especificado) tem como objetivo correlacionar a precipitação e as temperaturas máxima e mínima dos estados da região Sudeste do Brasil com o índice de vulnerabilidade social na região.
+
+- Dataset Utilizado: O estudo utilizou dados de precipitação e temperaturas máxima e mínima dos estados da região Sudeste do Brasil, no período de 2010 a 2019. Os dados de vulnerabilidade social foram obtidos a partir do Índice de Vulnerabilidade Social (IVS) da região.
+
+- Abordagens/Algoritmos Utilizados: Correlação de Pearson: Foi realizada uma correlação simples de Pearson entre a variabilidade climática (precipitação, temperaturas máxima e mínima) e o Índice de Vulnerabilidade Social (IVS) da região Sudeste do Brasil.
+  
+- Métricas de Avaliação: A métrica utilizada foi o coeficiente de correlação de Pearson (r), que varia de -1 a +1, onde valores próximos de +1 indicam uma correlação positiva entre as variáveis, ou seja, à medida que uma variável aumenta, a outra também aumenta.
+
+- Resultados Obtidos: Os resultados mostraram que, em termos de vulnerabilidade a eventos climáticos, a região Sudeste do Brasil é mais sensível e suscetível aos danos ocasionados pelas chuvas em comparação aos impactos decorrentes da variação de temperatura na região. Quanto à correlação entre a variabilidade climática e a vulnerabilidade social, identificou-se uma relação positiva, com valores de correlação de até +0,51, entre a variabilidade climática e as chuvas persistentes típicas do fenômeno Zona de Convergência do Atlântico Sul (ZCAS). Isso reforça que a precipitação é uma variável meteorológica influente sobre a vulnerabilidade social na região Sudeste do Brasil. Além disso, os resultados destacam que a mudança global do clima pode influenciar negativamente o clima em escala regional e local, trazendo danos à sociedade associados à sua resiliência e capacidade adaptativa.
+
+Referência:
+Kuroki, Larissa Yumi et al. "A Vulnerabilidade Social da Região Sudeste do Brasil Frente à Variabilidade Climática." Revista Brasileira de Climatologia, ano não especificado. Disponível em: <https://ojs.ufgd.edu.br/index.php/rbclima/article/view/15903/9032>. Acesso em: 09.03.2024.
 
 # Descrição do _dataset_ selecionado
 
@@ -224,9 +250,13 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 - CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
 - IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: <https://www.ipcc.ch/report/ar6/wg1/>. Acesso em: [03/03/2024].
 - Kaggle - Hourly Weather Surface Brazil Southeast Region. Disponível em: <https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region>
+- Kuroki, Larissa Yumi et al. "A Vulnerabilidade Social da Região Sudeste do Brasil Frente à Variabilidade Climática." Revista Brasileira de Climatologia, ano não especificado. Disponível em: <https://ojs.ufgd.edu.br/index.php/rbclima/article/view/15903/9032>. Acesso em: 09.03.2024.
 - Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 - Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
+- Pereira, Gabriel et al. "Análise da Variabilidade da Precipitação para o Estado de Minas Gerais (1981-2017)." Revista Brasileira de Climatologia, v. 32, n. 2, p. 213-228, ano não especificado. Disponível em: <https://ojs.ufgd.edu.br/index.php/rbclima/article/view/14068/7309>. Acesso em: 09.03.2024.
+- Sangwan, O., & Kumar, A. (2020). Big Data Analytics using Deep LSTM Networks: A Case Study for Weather Prediction. International Journal of Advanced Research in Computer and Communication Engineering, 9(21), 4641-4646. Disponível em : <https://www.researchgate.net/profile/Om-Sangwan/publication/339857640_Big_Data_Analytics_using_Deep_LSTM_Networks_A_Case_Study_for_Weather_Prediction/links/5ea42643a6fdccd79451e02a/Big-Data-Analytics-using-Deep-LSTM-Networks-A-Case-Study-for-Weather-Prediction.pdf>. Acesso em 04.03.2024
+
 
 
 
