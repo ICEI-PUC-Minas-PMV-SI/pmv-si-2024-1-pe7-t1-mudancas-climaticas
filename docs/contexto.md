@@ -37,11 +37,17 @@ Referências:
 
 ## Questão de pesquisa
 
-A questão de pesquisa é a base de todo o trabalho que será desenvolvido. É ela que motiva a realização da pesquisa e deverá ser adequada ao problema identificado. Ao término de sua pesquisa/experimentação, o objetivo é que seja encontrada a resposta da questão de pesquisa previamente definida.
+**Quais são os padrões espaciais identificados nas áreas da região sudeste com diferentes frequências e intensidades de ondas de calor, e de que maneira esses padrões têm evoluído ao longo do tempo?**
 
-> **Links Úteis**:
-> - [Questão de pesquisa](https://www.enago.com.br/academy/how-to-develop-good-research-question-types-examples/)
-> - [Problema de pesquisa](https://blog.even3.com.br/problema-de-pesquisa/)
+Essa questão de pesquisa pretende mergulhar na análise das ondas de calor na região sudeste do Brasil, buscando compreender os padrões espaciais que se manifestam em diferentes localidades em termos de frequência e intensidade desses eventos climáticos. A intenção é explorar variáveis como latitude, altitude, cobertura vegetal e características geográficas para identificar regiões que apresentam comportamentos distintos em relação às ondas de calor.
+
+Ela visa ainda delinear as áreas geográficas mais propensas a eventos climáticos extremos, com foco especial em ondas de calor na região sudeste do Brasil. Identificar padrões espaciais e temporais desses eventos é crucial para o desenvolvimento de estratégias de adaptação e mitigação.
+
+Além disso, a pesquisa almeja investigar a evolução desses padrões ao longo do tempo, estabelecendo conexões entre a dinâmica espacial e possíveis mudanças climáticas. Essa abordagem mais aprofundada permitirá uma compreensão mais refinada das peculiaridades de diferentes áreas na região sudeste em relação às ondas de calor.
+
+Consederando isso a abordagem adotada permitirá a criação de mapas que destacam as áreas mais suscetíveis a ondas de calor, facilitando a comunicação de informações cruciais para tomadores de decisão e comunidades locais.
+
+Tal análise temporal,será então, crucial para observar tendências, padrões cíclicos e possíveis anomalias climáticas que possam estar impactando a frequência e intensidade das ondas de calor. Esses insights serão fundamentais não apenas para um entendimento mais preciso do clima na região, mas também para orientar estratégias de adaptação e mitigação diante dos desafios impostos pelas mudanças climáticas. Em última análise, o objetivo é fornecer informações substanciais para tomadas de decisões embasadas em dados concretos, contribuindo para a resiliência da região frente às variações climáticas.
 
 ## Objetivos preliminares
 
