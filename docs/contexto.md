@@ -242,7 +242,8 @@ Todos os atributos são numéricos, com exceção de "Data" e "Qualidade do Ar".
 
 # Canvas analítico
 
-Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analítico tem o papel de registrar a organização das ideias e apresentar o modelo de negócio.
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/b30501ba-2a31-4a7d-a89c-dd2d51e9bd8d)
+
 
 > **Links Úteis**:
 > - [Modelo do Canvas Analítico](https://github.com/ICEI-PUC-Minas-PMV-SI/PesquisaExperimentacao-Template/blob/main/help/Software-Analtics-Canvas-v1.0.pdf)
