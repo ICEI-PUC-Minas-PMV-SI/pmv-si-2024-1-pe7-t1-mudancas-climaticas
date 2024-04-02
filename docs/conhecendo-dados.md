@@ -6,8 +6,9 @@ Para isso, sugere-se que você utilize cálculos de medidas de tendência centra
 
 Inclua nesta seção, gráficos, tabelas e demais artefatos que você considere relevantes para entender os dados com os quais você irá trabalhar.
 
-![heatmap](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/80d0e6a1-c152-475c-8445-a9a9ee7ee036)
-![heatmap](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/9da5897b-b0bd-4453-b639-a8299a22cfb7)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/71c6b068-cc11-405a-9cba-433459237273)
 
 
 ## Descrição dos achados
