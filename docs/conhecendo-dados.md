@@ -6,9 +6,8 @@ Para isso, sugere-se que você utilize cálculos de medidas de tendência centra
 
 Inclua nesta seção, gráficos, tabelas e demais artefatos que você considere relevantes para entender os dados com os quais você irá trabalhar.
 
+![Mapa de Calor](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/blob/main/docs/img/mapa%20de%20calor.jpg)
 
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/71c6b068-cc11-405a-9cba-433459237273)
 
 
 ## Descrição dos achados
