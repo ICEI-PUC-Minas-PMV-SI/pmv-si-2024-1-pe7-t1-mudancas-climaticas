@@ -1,14 +1,14 @@
 # Introdução
 
-Ondas de calor: um desafio crescente para a região sudeste do Brasil.
+Ondas de calor: um desafio crescente para a cidade de Belo Horizonte- Minas Gerais, na região sudeste do Brasil.
 
-O clima da Terra está em constante mudança, e os impactos das mudanças climáticas são cada vez mais evidentes em todo o mundo. A região sudeste do Brasil, por sua vez, é particularmente vulnerável a eventos climáticos extremos, como secas, inundações e ondas de calor.
+O clima da Terra está em constante mudança, e os impactos das mudanças climáticas são cada vez mais evidentes em todo o mundo. A cidade de Belo Horizonte- Minas Gerais, na região sudeste do Brasil, por sua vez, é particularmente vulnerável a eventos climáticos extremos, como secas, inundações e ondas de calor.
 
-Compreender a variabilidade espacial e temporal do clima na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública.
+Compreender a variabilidade espacial e temporal do clima na cidade de Belo Horizonte- Minas Gerai,s na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública.
 
 Este projeto, utilizando o dataset [Hourly Weather Surface Brazil Southeast Region](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region?resource=download&select=southeast.csv), busca analisar em detalhes as ondas de calor na região, com o objetivo de:
 
-- Avaliar a variabilidade espacial e temporal do clima na região sudeste do Brasil.
+- Avaliar a variabilidade espacial e temporal do clima na cidade de Belo Horizonte- Minas Gerais, região sudeste do Brasil.
 - Identificar áreas mais suscetíveis a eventos climáticos extremos.
 
 ## Problema
@@ -17,7 +17,7 @@ A região sudeste do Brasil, com mais de 80 milhões de habitantes, concentra gr
 
 Compreender a variabilidade espacial e temporal do clima na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública (Marengo, 2020). No entanto, ainda há uma lacuna de conhecimento sobre o clima da região, especialmente em relação aos impactos das mudanças climáticas (CPTEC, 2023).
 
-Este projeto visa analisar a variabilidade climática na região sudeste do Brasil, com foco em:
+Este projeto visa analisar a variabilidade climática na cidade de Belo Horizonte- Minas Gerais na região sudeste do Brasil, com foco em:
 
 - Avaliar a variabilidade espacial e temporal do clima:
     - Identificar áreas com diferentes padrões climáticos.
@@ -53,11 +53,11 @@ Tal análise temporal,será então, crucial para observar tendências, padrões 
 
 ### Objetivo Geral:
 
-Analisar a variabilidade climática na região sudeste do Brasil, com foco em ondas de calor, para contribuir com a construção de um futuro mais resiliente às mudanças climáticas, utilizando o dataset "Hourly Weather Surface Brazil Southeast Region" e técnicas de Machine Learning.
+Analisar a variabilidade climática na cidade de Belo Horizonte- Minas Gerais, na região sudeste do Brasil, com foco em ondas de calor, para contribuir com a construção de um futuro mais resiliente às mudanças climáticas, utilizando o dataset "Hourly Weather Surface Brazil Southeast Region" e técnicas de Machine Learning.
 
 ### Objetivos Específicos:
 
-1. Avaliar a variabilidade espacial e temporal das ondas de calor na região sudeste do Brasil:
+1. Avaliar a variabilidade espacial e temporal das ondas de calor na cidade de Belo Horizonte- Minas Gerais, região sudeste do Brasil:
 
 - Identificar áreas com diferentes padrões de frequência e intensidade de ondas de calor.
 - Analisar as mudanças na frequência, intensidade e duração das ondas de calor ao longo do tempo.
