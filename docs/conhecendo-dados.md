@@ -15,20 +15,20 @@ Primeiramente foram agrupados os dados de maneira sequêncial, em seguida calcul
 
 Após a definições das médias, foram gerados gráficos com tendências de movimentação (EMA) utilizando a seguinte fórmula:
 
-```
-EMA 
-t
-​
- =α×(Valor no per 
-ı
-ˊ
- odo t)+(1−α)×EMA 
-t−1
-​
- 
-```
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/3a469fb6-5c3f-4aff-80ba-e91b486be253)
+
+Onde:
+
+- EMAt é a Média Móvel Exponencial para o período t.
+- Valor no período t é o valor da série temporal no período t.
+-  EMAt−1 é a EMA calculada para o período anterior t−1.
+-  α é o fator de suavização calculado na etapa 1.
+
+#### Tendência de Movimentação da Precipitação
 ![Preciptação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/e7fb871b-13f0-4e4f-9ea4-e166f5d9506d)
-Com re
+Após analisar o gráfico podemos perceber que o maior volume de precipitação tende a ser entre os meses de Outubro e Abril, sendo as estações de primavera e verão.
+
+Importante indicar o alto volume indicado no início de 2020 e de 2021, sendo muito acima da linha de tendência calculada.
 
 ## Descrição dos achados
 
