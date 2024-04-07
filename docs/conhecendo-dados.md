@@ -8,7 +8,27 @@ Inclua nesta seção, gráficos, tabelas e demais artefatos que você considere 
 
 ![Mapa de Calor](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/blob/main/docs/img/mapa%20de%20calor.jpg)
 
+### Visual dos Dados
+Após o tratamento da base de dados foram gerados gráficos em linha para a análise de tendências.
 
+Primeiramente foram agrupados os dados de maneira sequêncial, em seguida calculamos as médias mensais de todo o período coletado.
+
+Após a definições das médias, foram gerados gráficos com tendências de movimentação (EMA) utilizando a seguinte fórmula:
+
+```
+EMA 
+t
+​
+ =α×(Valor no per 
+ı
+ˊ
+ odo t)+(1−α)×EMA 
+t−1
+​
+ 
+```
+![Preciptação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/e7fb871b-13f0-4e4f-9ea4-e166f5d9506d)
+Com re
 
 ## Descrição dos achados
 
