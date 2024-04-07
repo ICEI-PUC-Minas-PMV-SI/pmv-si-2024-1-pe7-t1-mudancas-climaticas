@@ -6,7 +6,86 @@ Para isso, sugere-se que você utilize cálculos de medidas de tendência centra
 
 Inclua nesta seção, gráficos, tabelas e demais artefatos que você considere relevantes para entender os dados com os quais você irá trabalhar.
 
-![Mapa de Calor](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/blob/main/docs/img/mapa%20de%20calor.jpg)
+### Estrutura dos Dados
+
+O dataset contém 37.946 linhas e 23 colunas, com informações horárias sobre diversas variáveis climáticas, como:
+
+1. Variáveis Climáticas:
+
+- Precipitação total horária (mm)
+- Pressão atmosférica ao nível da estação, horária (mb)
+- Pressão atmosférica máxima na hora anterior (AUT) (mb)
+- Pressão atmosférica mínima na hora anterior (AUT) (mb)
+- Radiação global (Kj/m²)
+- Temperatura do ar bulbo seco, horária (°C)
+- Temperatura do ponto de orvalho (°C)
+- Temperatura máxima na hora anterior (AUT) (°C)
+- Temperatura mínima na hora anterior (AUT) (°C)
+- Temperatura orvalho máxima na hora anterior (AUT) (°C)
+- Temperatura orvalho mínima na hora anterior (AUT) (°C)
+- Umidade relativa do ar, horária (%)
+- Umidade relativa máxima na hora anterior (AUT) (%)
+- Umidade relativa mínima na hora anterior (AUT) (%)
+- Vento, direção horária (gr) (° (gr))
+- Vento, rajada máxima (m/s)
+- Vento, velocidade horária (m/s)
+
+2. Variáveis Temporais:
+   
+- Ano
+
+3. Variáveis Derivadas:
+   
+- Amplitude térmica
+
+-  ### Medidas de Tendência Central
+
+
+
+  #### Mapa de Calor
+
+![Captura de tela 2024-04-07 174045](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/7592f817-8d1d-4d78-99be-fa4d2a5445dc)
+
+##### Interpretando as Correlações:
+
+- Azul escuro: Correlação positiva. Aumento em uma variável está associado ao aumento na outra.
+- Azul turquesa escuro: Correlação positiva forte.
+- Azul turquesa: Correlação positiva fraca.
+- Azul turquesa claro: Correlação negativa. Aumento em uma variável está associado à diminuição na outra.
+- Azul céu: Correlação negativa forte.
+- Azul claro: Correlação negativa fraca.
+- Azul claro: Ausência de correlação.
+
+  #### Resumo dos Achados:
+
+  ##Pressao e Vento
+
+A correlação entre as variáveis de Precipitação, Pressão Atmosférica, Pressão Máxima e Pressão Mínima, todas com correlações acima de 0.94, é um reflexo da interdependência desses parâmetros meteorológicos. Mudanças na pressão atmosférica podem indicar a chegada de sistemas de alta ou baixa pressão, que por sua vez influenciam a formação de nuvens e a ocorrência de precipitação. Portanto, é esperado que essas variáveis apresentem forte correlação entre si.
+
+Por outro lado, a correlação de acima de 0.84 entre Direção do Vento, Rajada Máxima e Velocidade do Vento sugere uma associação moderada entre esses parâmetros. A direção e a intensidade do vento podem ser influenciadas tanto pela topografia local quanto pelos padrões de pressão atmosférica. Por exemplo, em áreas montanhosas, a direção e a intensidade do vento podem ser influenciadas pela orientação das montanhas. Além disso, a pressão atmosférica pode influenciar os padrões de vento devido ao movimento do ar de áreas de alta pressão para áreas de baixa pressão.
+
+Portanto, é razoável esperar uma correlação entre esses conjuntos de variáveis, pois todas estão intrinsecamente ligadas às condições atmosféricas locais e regionais. No entanto, a correlação de 0.84 pode indicar que outros fatores além desses estão influenciando as variações nas direções e velocidades do vento. Talvez a topografia local, a presença de corpos d'água ou a sazonalidade também desempenhem um papel significativo na determinação dos padrões de vento observados.
+
+  ## Temperatura
+
+A correlação extremamente alta de mais de 0.98 entre a Temperatura e as temperaturas máxima e mínima (TempMax e TempMin) é esperada e indicativa de um forte relacionamento entre essas variáveis. A temperatura do ar é uma medida direta da energia térmica presente na atmosfera em um determinado local e momento, e as temperaturas máxima e mínima representam os extremos alcançados ao longo de um período específico.
+
+A alta correlação entre a Temperatura e as temperaturas máxima e mínima sugere que elas variam juntas de maneira consistente. Isso é coerente com o conceito de que a temperatura do ar durante o dia tende a atingir seu valor máximo (TempMax) e diminuir até o mínimo (TempMin) durante a noite. Portanto, é esperado que essas variáveis estejam altamente correlacionadas, refletindo as mudanças diárias e sazonais na temperatura do ar.
+
+Além disso, a alta correlação indica que as mudanças na temperatura do ar são bem representadas pelas variações nas temperaturas máxima e mínima. Essa forte associação pode ser útil para prever as condições meteorológicas e entender melhor os padrões climáticos locais e regionais.
+
+## Ponto de Orvalho e Humidade
+
+
+A alta correlação de mais de 0.92 entre as variáveis relacionadas ao ponto de orvalho (TempOrvalhoMax e TempOrvalhoMin) e à umidade relativa do ar (UmidadeMax, UmidadeMin e UmidadeRelativa), juntamente com a temperatura, indica uma forte associação entre esses parâmetros meteorológicos.
+
+O ponto de orvalho é a temperatura na qual o vapor de água presente no ar se condensa para formar gotículas de água, e a umidade relativa do ar é a medida da quantidade de vapor de água presente na atmosfera em relação à quantidade máxima que poderia ser retida a uma determinada temperatura. Portanto, é esperado que essas variáveis estejam intimamente relacionadas, pois todas estão relacionadas à quantidade de umidade na atmosfera.
+
+A alta correlação entre o ponto de orvalho máximo e mínimo e a umidade relativa sugere que essas variáveis tendem a variar juntas de maneira consistente. Quando a umidade relativa do ar aumenta, a temperatura na qual o orvalho se forma (ponto de orvalho) também tende a aumentar, pois há mais vapor de água na atmosfera. Da mesma forma, quando a umidade relativa diminui, o ponto de orvalho também tende a diminuir.
+
+
+A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a sua atenção? foi possível identificar correlação entre os atributos?
+
 
 ### Visual dos Dados
 Após o tratamento da base de dados foram gerados gráficos em linha para a análise de tendências.
