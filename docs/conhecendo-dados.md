@@ -80,7 +80,6 @@ A alta correlação entre o ponto de orvalho máximo e mínimo e a umidade relat
 
 A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a sua atenção? foi possível identificar correlação entre os atributos?
 
-
 ### Visual dos Dados
 Após o tratamento da base de dados foram gerados gráficos em linha para a análise de tendências.
 
@@ -94,8 +93,8 @@ Onde:
 
 - EMAt é a Média Móvel Exponencial para o período t.
 - Valor no período t é o valor da série temporal no período t.
--  EMAt−1 é a EMA calculada para o período anterior t−1.
--  α é o fator de suavização calculado na etapa 1.
+- EMAt−1 é a EMA calculada para o período anterior t−1.
+- α é o fator de suavização calculado na etapa 1.
 
 #### Tendência de Movimentação da Precipitação
 ![Preciptação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/e7fb871b-13f0-4e4f-9ea4-e166f5d9506d)
@@ -103,6 +102,27 @@ Após analisar o gráfico podemos perceber que o maior volume de precipitação 
 
 Importante indicar o alto volume indicado no início de 2020 e de 2021, sendo muito acima da linha de tendência calculada.
 
+### Tendência de Movimentação da Pressão Atmosférica
+![Pressao Atmosferica](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/e552475c-2ffd-4948-9f5a-6438ff1491f1)
+Após análise do grafico, percebece que os valores mais baixos são apresentados nos entre os meses de Outubro e Abril. Quanto aos valores mais altos estão presentes entre Maio e Setembro.
+
+### Tendência de Movimentação da Radiação Global
+![Radiação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/3f16398e-1164-4e60-87ea-38304e7c2266)
+Ao analisar os dados da radiação global percebe-se uma queda brusca nos valores coletados a partir de 2021, indicando uma possível falha na coleta dos dados
+
+### Tendência de Movimentação da Temperatura
+![Temperatura](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/f825e72c-c6d8-4308-9c8e-422169f8beca)
+Após análise da tendência da temperatura percebece que as temperaturas mais baixas estão presentes nos meses de Maio a Agosto. Quanto aos valores mais altos, estão presentes picos esporádicos em diferentes momentos do ano.
+
+### Tendência de Movimentação da Umidade
+![Umidade Relativa](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/3ca60a05-cd58-4f57-9a99-3e4203a14728)
+Quando analisado, o gráfico de movimentação da umidade apresenta seus valores mais altos entre os meses de Outubro a Abril e seus valores mais baixos nos meses de Maio a Setembro.
+
+## Conclusões das Análises
+
+- As variáveis temperatura, precipitação e umidade estão diretamente ligadas, sendo que todas apresentam uma tendência semelhante em seus movimentos de aumento e queda de valores.
+- Os valores da pressão atmosferica tendem a ser bem constantes e não influênciar nas outras variáveis.
+- Existe uma possível perda dos dados a partir de 2021, onde podemos perceber uma queda significativa em algumas variáveis.
 ## Descrição dos achados
 
 ### Identificação de Correlação:
