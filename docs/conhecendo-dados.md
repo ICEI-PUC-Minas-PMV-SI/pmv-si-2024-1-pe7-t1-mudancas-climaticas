@@ -1,11 +1,5 @@
 # Conhecendo os dados
 
-Nesta seção, você deverá registrar uma detalhada análise descritiva e exploratória sobre a base de dados selecionada na Etapa 1 com o objetivo de compreender a estrutura dos dados, detectar eventuais _outliers_ e também, avaliar/detectar as relações existentes entre as variáveis analisadas.
-
-Para isso, sugere-se que você utilize cálculos de medidas de tendência central, como média, mediana e moda, para entender a centralidade dos dados; explorem medidas de dispersão como desvio padrão e intervalos interquartil para avaliar a variabilidade dos dados; utilizem gráficos descritivos como histogramas e box plots, para representar visualmente as características essenciais dos dados, pois essas visualizações podem facilitar a identificação de padrões e anomalias; analisem a relação aparente entre as variáveis por meio de análise de correlação ou gráficos de dispersões, entre outras técnicas. 
-
-Inclua nesta seção, gráficos, tabelas e demais artefatos que você considere relevantes para entender os dados com os quais você irá trabalhar.
-
 ### Estrutura dos Dados
 
 O dataset contém 37.946 linhas e 23 colunas, com informações horárias sobre diversas variáveis climáticas, como:
@@ -58,7 +52,7 @@ O dataset contém 37.946 linhas e 23 colunas, com informações horárias sobre 
 
   #### Resumo dos Achados:
 
-##Pressao e Vento
+##### Pressao e Vento
 
 A correlação entre as variáveis de Precipitação, Pressão Atmosférica, Pressão Máxima e Pressão Mínima, todas com correlações acima de 0.94, é um reflexo da interdependência desses parâmetros meteorológicos. Mudanças na pressão atmosférica podem indicar a chegada de sistemas de alta ou baixa pressão, que por sua vez influenciam a formação de nuvens e a ocorrência de precipitação. Portanto, é esperado que essas variáveis apresentem forte correlação entre si.
 
@@ -66,7 +60,7 @@ Por outro lado, a correlação de acima de 0.84 entre Direção do Vento, Rajada
 
 Portanto, é razoável esperar uma correlação entre esses conjuntos de variáveis, pois todas estão intrinsecamente ligadas às condições atmosféricas locais e regionais. No entanto, a correlação de 0.84 pode indicar que outros fatores além desses estão influenciando as variações nas direções e velocidades do vento. Talvez a topografia local, a presença de corpos d'água ou a sazonalidade também desempenhem um papel significativo na determinação dos padrões de vento observados.
 
-## Temperatura
+##### Temperatura
 
 A correlação extremamente alta de mais de 0.98 entre a Temperatura e as temperaturas máxima e mínima (TempMax e TempMin) é esperada e indicativa de um forte relacionamento entre essas variáveis. A temperatura do ar é uma medida direta da energia térmica presente na atmosfera em um determinado local e momento, e as temperaturas máxima e mínima representam os extremos alcançados ao longo de um período específico.
 
@@ -74,7 +68,7 @@ A alta correlação entre a Temperatura e as temperaturas máxima e mínima suge
 
 Além disso, a alta correlação indica que as mudanças na temperatura do ar são bem representadas pelas variações nas temperaturas máxima e mínima. Essa forte associação pode ser útil para prever as condições meteorológicas e entender melhor os padrões climáticos locais e regionais.
 
-## Ponto de Orvalho e Humidade
+##### Ponto de Orvalho e Humidade
 
 
 A alta correlação de mais de 0.92 entre as variáveis relacionadas ao ponto de orvalho (TempOrvalhoMax e TempOrvalhoMin) e à umidade relativa do ar (UmidadeMax, UmidadeMin e UmidadeRelativa), juntamente com a temperatura, indica uma forte associação entre esses parâmetros meteorológicos.
@@ -110,11 +104,6 @@ Após analisar o gráfico podemos perceber que o maior volume de precipitação 
 Importante indicar o alto volume indicado no início de 2020 e de 2021, sendo muito acima da linha de tendência calculada.
 
 ## Descrição dos achados
-
-A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a sua atenção? foi possível identificar correlação entre os atributos?
-
-### Centralidade dos Dados
-
 
 ### Identificação de Correlação:
 
