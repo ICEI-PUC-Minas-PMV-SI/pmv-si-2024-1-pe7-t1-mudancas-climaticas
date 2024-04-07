@@ -114,9 +114,11 @@ Ao analisar os dados da radiação global percebe-se uma queda brusca nos valore
 ![Temperatura](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/f825e72c-c6d8-4308-9c8e-422169f8beca)
 Após análise da tendência da temperatura percebece que as temperaturas mais baixas estão presentes nos meses de Maio a Agosto. Quanto aos valores mais altos, estão presentes picos esporádicos em diferentes momentos do ano.
 
-### Tendência de Movimentação da Umidade
+### Tendência de Movimentação da Umidade e Ponto de Orvalho
 ![Umidade Relativa](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/3ca60a05-cd58-4f57-9a99-3e4203a14728)
-Quando analisado, o gráfico de movimentação da umidade apresenta seus valores mais altos entre os meses de Outubro a Abril e seus valores mais baixos nos meses de Maio a Setembro.
+![Ponto de Orvalho](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/90010232/683990b3-1744-4684-b38b-f963bd5731db)
+
+Quando analisado, o gráfico de movimentação da umidade apresenta seus valores mais altos entre os meses de Outubro a Abril e seus valores mais baixos nos meses de Maio a Setembro. O mesmo padrão é percebido quando olhamos para o ponto de orvalho.
 
 ## Conclusões das Análises
 
