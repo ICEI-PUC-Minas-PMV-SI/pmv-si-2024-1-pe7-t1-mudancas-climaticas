@@ -310,8 +310,38 @@ P-value: < 2.2e-16 (muito próximo de zero)
 Isso significa que a correlação observada é estatisticamente significativa (rejeita-se a hipótese nula de que não há correlação entre as variáveis.
 
 
+#### Conclusão
+
+- Correlação entre Precipitação Total Horária e Umidade Relativa do Ar Horária:
+
+Coeficiente de Correlação (r): 0.1835
+Interpretation: Existe uma correlação positiva fraca entre a precipitação total horária e a umidade relativa do ar horária. Isso sugere que, em geral, períodos com maior umidade relativa do ar podem estar associados a uma maior precipitação, embora a relação seja relativamente fraca.
+
+- Correlação entre Temperatura do Ar Bulbo Seco Horária e Radiação Global:
+
+Coeficiente de Correlação (r): 0.6731
+Interpretation: Existe uma correlação positiva forte entre a temperatura do ar bulbo seco horária e a radiação global. Isso indica que períodos com temperaturas mais altas estão associados a níveis mais elevados de radiação solar.
+
+- Correlação entre Temperatura do Ar Bulbo Seco Horária e Umidade Relativa do Ar Horária:
+
+Coeficiente de Correlação (r): -0.6594
+Interpretation: Existe uma correlação negativa forte entre a temperatura do ar bulbo seco horária e a umidade relativa do ar horária. Isso sugere que períodos com temperaturas mais altas estão associados a níveis mais baixos de umidade relativa do ar, e vice-versa.
+
+- Correlação entre Vento, Rajada Máxima e Vento, Velocidade Horária:
+
+Coeficiente de Correlação (r): 0.8538
+Interpretation: Existe uma correlação positiva muito forte entre a velocidade máxima do vento e a velocidade horária do vento. Isso indica que, em geral, períodos com ventos mais fortes tendem a ter velocidades horárias mais altas e vice-versa.
+
+- Correlação entre Temperatura do Ar Bulbo Seco Horária e Pressão Atmosférica ao Nível da Estação:
+
+Coeficiente de Correlação (r): -0.2868
+Interpretation: Existe uma correlação negativa moderada entre a temperatura do ar bulbo seco horária e a pressão atmosférica ao nível da estação. Isso sugere que períodos com temperaturas mais altas estão associados a níveis mais baixos de pressão atmosférica, e vice-versa.
+
 
 ## Ferramentas utilizadas
 
-Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação.
-
+- Comprehensive R Archive Network (CRAN): repositório de software que hospeda uma vasta coleção de pacotes e bibliotecas para a linguagem de programação R. Esses pacotes oferecem uma variedade de funcionalidades estatísticas, gráficas e de análise de dados.
+  
+- Linguagem de Programação: Python
+  
+- Jupyter, aplicação web de código aberto.
