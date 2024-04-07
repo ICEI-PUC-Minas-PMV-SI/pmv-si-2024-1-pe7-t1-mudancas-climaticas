@@ -58,7 +58,7 @@ O dataset contém 37.946 linhas e 23 colunas, com informações horárias sobre 
 
   #### Resumo dos Achados:
 
-  ##Pressao e Vento
+##Pressao e Vento
 
 A correlação entre as variáveis de Precipitação, Pressão Atmosférica, Pressão Máxima e Pressão Mínima, todas com correlações acima de 0.94, é um reflexo da interdependência desses parâmetros meteorológicos. Mudanças na pressão atmosférica podem indicar a chegada de sistemas de alta ou baixa pressão, que por sua vez influenciam a formação de nuvens e a ocorrência de precipitação. Portanto, é esperado que essas variáveis apresentem forte correlação entre si.
 
@@ -66,7 +66,7 @@ Por outro lado, a correlação de acima de 0.84 entre Direção do Vento, Rajada
 
 Portanto, é razoável esperar uma correlação entre esses conjuntos de variáveis, pois todas estão intrinsecamente ligadas às condições atmosféricas locais e regionais. No entanto, a correlação de 0.84 pode indicar que outros fatores além desses estão influenciando as variações nas direções e velocidades do vento. Talvez a topografia local, a presença de corpos d'água ou a sazonalidade também desempenhem um papel significativo na determinação dos padrões de vento observados.
 
-  ## Temperatura
+## Temperatura
 
 A correlação extremamente alta de mais de 0.98 entre a Temperatura e as temperaturas máxima e mínima (TempMax e TempMin) é esperada e indicativa de um forte relacionamento entre essas variáveis. A temperatura do ar é uma medida direta da energia térmica presente na atmosfera em um determinado local e momento, e as temperaturas máxima e mínima representam os extremos alcançados ao longo de um período específico.
 
