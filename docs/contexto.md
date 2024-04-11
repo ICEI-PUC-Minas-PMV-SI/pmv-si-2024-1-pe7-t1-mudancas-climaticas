@@ -85,11 +85,35 @@ Referências:
 - Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/. Acesso em 02/03/2024.
 - Kotler, P., & Armstrong, G. (2018). Principles of marketing (17th ed.). Pearson.
 
-## Justificativa
+## Justificativa:
 
-A compreensão precisa dos padrões climáticos é crucial para diversas esferas da sociedade, incluindo planejamento urbano, agrícola e prevenção de desastres naturais (Fonte: WMO, 2020). No entanto, as mudanças climáticas têm aumentado a volatilidade desses padrões, tornando essencial o desenvolvimento de métodos avançados de previsão (IPCC, 2019). Nesse contexto, a aplicação de técnicas de machine learning em dados climáticos históricos se mostra relevante (NOAA, 2018).
+A compreensão precisa dos padrões climáticos é crucial para diversas esferas da sociedade, incluindo planejamento urbano, agrícola e prevenção de desastres naturais (WMO, 2020). No entanto, as mudanças climáticas têm aumentado a volatilidade desses padrões, tornando essencial o desenvolvimento de métodos avançados de previsão (IPCC, 2019). Nesse contexto, a aplicação de técnicas de machine learning em dados climáticos históricos se mostra relevante (NOAA, 2018).
 
-A precisão das previsões climáticas é fundamental para a preparação e adaptação às condições meteorológicas extremas (Fonte: IPCC, 2018). Além disso, a capacidade de antecipar mudanças climáticas de longo prazo é essencial para o planejamento eficaz em diversas áreas (WMO, 2021).
+A precisão das previsões climáticas é fundamental para a preparação e adaptação às condições meteorológicas extremas (IPCC, 2018). Além disso, a capacidade de antecipar mudanças climáticas de longo prazo é essencial para o planejamento eficaz em diversas áreas (WMO, 2021).
+
+Objetivos Específicos:
+
+Precisão das Previsões: A utilização de machine learning em dados climáticos pode identificar padrões sutis, resultando em previsões mais precisas e confiáveis (NOAA, 2019).
+
+Adaptação e Mitigação: Compreender os padrões climáticos permite uma melhor adaptação às mudanças climáticas e implementação de medidas de mitigação mais eficazes (IPCC, 2020).
+
+Alerta de Desastres Naturais: Modelos de machine learning podem auxiliar na detecção precoce de eventos climáticos extremos, facilitando o planejamento e a resposta a desastres (WMO, 2019).
+
+Profundidade do Estudo:
+
+O estudo das mudanças climáticas e seus impactos é crucial, especialmente considerando o aumento da frequência e intensidade de eventos climáticos extremos (IPCC, 2021). Além disso, tais eventos têm um impacto significativo na saúde pública e na economia (NOAA, 2020).
+
+Impacto na Sociedade:
+
+A melhoria das previsões climáticas reduz os riscos para a vida e a propriedade, aumentando a resiliência das comunidades (WMO, 2022). Além disso, contribui para uma melhor qualidade de vida ao garantir acesso a recursos essenciais, mesmo em situações adversas (IPCC, 2017).
+
+Referências:
+
+IPCC. Relatório Especial sobre Aquecimento Global de 1,5 °C. 2017.
+
+NOAA - National Oceanic and Atmospheric Administration. 2020.
+
+WMO - World Meteorological Organization. 2022.
 
 ### Objetivos Específicos:
 
