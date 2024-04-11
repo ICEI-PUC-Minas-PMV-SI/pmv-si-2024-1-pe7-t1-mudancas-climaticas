@@ -200,26 +200,26 @@ Kuroki, Larissa Yumi et al. "A Vulnerabilidade Social da Região Sudeste do Bras
 | Nome do Atributo             | Tipo             | Descrição                                          |
 |------------------------------|------------------|----------------------------------------------------|
 | Data                         | datetime64[ns]   | Data e hora da medição                             |
-| Estação                      | int64            | Identificador único da estação meteorológica       |
-| Latitude                     | float64          | Latitude da estação meteorológica                  |
-| Longitude                    | float64          | Longitude da estação meteorológica                 |
-| Altitude                     | float64          | Altitude da estação meteorológica                  |
-| Temperatura (°C)             | float64          | Temperatura do ar em graus Celsius                 |
-| Ponto de Orvalho (°C)        | float64          | Ponto de orvalho em graus Celsius                  |
-| Umidade Relativa (%)         | float64          | Umidade relativa do ar em porcentagem              |
-| Pressão Atmosférica (hPa)    | float64          | Pressão atmosférica em hectopascal                 |
-| Radiação Solar Global (W/m²) | float64          | Radiação solar global em watts por metro quadrado   |
-| Velocidade do Vento (m/s)    | float64          | Velocidade do vento em metros por segundo          |
-| Direção do Vento (°)         | float64          | Direção do vento em graus                          |
-| Precipitação Total (mm)      | float64          | Precipitação total em milímetros                   |
-| Precipitação Convectiva (mm) | float64          | Precipitação convectiva em milímetros              |
-| Precipitação Estratiforme (mm)| float64          | Precipitação estratiforme em milímetros            |
-| Neve Total (mm)              | float64          | Neve total em milímetros                           |
-| Cobertura de Nuvens (%)      | float64          | Cobertura de nuvens em porcentagem                 |
-| Visibilidade (km)            | float64          | Visibilidade em quilômetros                        |
+| Estação                      | object           | Identificador único da estação meteorológica       |
+| Latitude                     | int64            | Latitude da estação meteorológica                  |
+| Longitude                    | int64            | Longitude da estação meteorológica                 |
+| Altitude                     | int64            | Altitude da estação meteorológica                  |
+| Temperatura (°C)             | int64            | Temperatura do ar em graus Celsius                 |
+| Ponto de Orvalho (°C)        | int64            | Ponto de orvalho em graus Celsius                  |
+| Umidade Relativa (%)         | int64            | Umidade relativa do ar em porcentagem              |
+| Pressão Atmosférica (hPa)    | int64            | Pressão atmosférica em hectopascal                 |
+| Radiação Solar Global (W/m²) | int64            | Radiação solar global em watts por metro quadrado   |
+| Velocidade do Vento (m/s)    | int64            | Velocidade do vento em metros por segundo          |
+| Direção do Vento (°)         | int64            | Direção do vento em graus                          |
+| Precipitação Total (mm)      | int64            | Precipitação total em milímetros                   |
+| Precipitação Convectiva (mm) | int64            | Precipitação convectiva em milímetros              |
+| Precipitação Estratiforme (mm)| int64           | Precipitação estratiforme em milímetros            |
+| Neve Total (mm)              | int64            | Neve total em milímetros                           |
+| Cobertura de Nuvens (%)      | int64            | Cobertura de nuvens em porcentagem                 |
+| Visibilidade (km)            | int64            | Visibilidade em quilômetros                        |
 | Qualidade do Ar              | int64            | Qualidade do ar (0-100)                            |
-| Sensação Térmica (°C)        | float64          | Sensação térmica em graus Celsius                  |
-| Índice UV                    | float64          | Índice UV                                          |
+| Sensação Térmica (°C)        | int64            | Sensação térmica em graus Celsius                  |
+| Índice UV                    | int64            | Índice UV                                          |
 
 ## Atributos faltantes:
 O dataset não possui atributos faltantes.
