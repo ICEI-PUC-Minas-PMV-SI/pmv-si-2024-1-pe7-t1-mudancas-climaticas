@@ -2,7 +2,7 @@
 
 Ondas de calor: um desafio crescente para a cidade de Belo Horizonte- Minas Gerais, na região sudeste do Brasil.
 
-O clima da Terra está em constante mudança, e os impactos das mudanças climáticas são cada vez mais evidentes em todo o mundo. A cidade de Belo Horizonte- Minas Gerais, na região sudeste do Brasil, por sua vez, é particularmente vulnerável a eventos climáticos extremos, como secas, inundações e ondas de calor.
+O clima da Terra está em constante mudança, e os impactos das mudanças climáticas são cada vez mais evidentes em todo o mundo. (...)Belo  Horizonte  possui  regiões  de  alta vulnerabilidade à ocorrência de eventos climáticos extremos no cenário projetado para 2030.( (SILVA et al., 2023).
 
 Compreender a variabilidade espacial e temporal do clima na cidade de Belo Horizonte- Minas Gerai,s na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública.
 
@@ -17,7 +17,9 @@ A região sudeste do Brasil, com mais de 80 milhões de habitantes, concentra gr
 
 Compreender a variabilidade espacial e temporal do clima na região sudeste é crucial para a tomada de decisões em diversos setores da sociedade, como planejamento urbano e regional, gestão de recursos hídricos, agricultura e saúde pública (Marengo, 2020). No entanto, ainda há uma lacuna de conhecimento sobre o clima da região, especialmente em relação aos impactos das mudanças climáticas (CPTEC, 2023).
 
-Este projeto visa analisar a variabilidade climática na cidade de Belo Horizonte- Minas Gerais na região sudeste do Brasil, com foco em:
+Estudos já demonstraram a vulnerabilidade de Belo Horizonte às mudanças climáticas e a necessidade de ações para mitigar e se adaptar aos seus impactos. No entanto, os desafios para a gestão dos riscos climáticos na cidade são complexos e exigem um conhecimento aprofundado das características específicas de cada região em relação à ocorrência desses eventos.
+
+A realização de um estudo detalhado sobre a variabilidade climática em Belo Horizonte é crucial por diversos motivos:
 
 - Avaliar a variabilidade espacial e temporal do clima:
     - Identificar áreas com diferentes padrões climáticos.
@@ -30,10 +32,10 @@ A análise da variabilidade climática na região sudeste do Brasil é um tema c
 
 Referências:
 
-- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: https://www.ipcc.ch/report/ar6/wg1/. Acesso em: [03/03/2024].
-- Marengo, J. A. (2023). Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções (p. 110). Editora Blucher.
-- MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
-- CENTRO DE PREVISÃO DE TEMPO E ESTUDOS CLIMÁTICOS (CPTEC). Estudos climáticos para a região sudeste do Brasil. Brasília: Ministério da Ciência, Tecnologia e Inovações, 2023.
+- IPCC - Painel Intergovernamental sobre Mudanças Climáticas. Disponível em: https://www.ipcc.ch/report/ar6/wg1/. Acesso em: 03 mar. 2024.
+- Marengo, J. A. Mudanças climáticas e eventos extremos no Brasil. In: Mudanças Climáticas no Brasil: Causas, Efeitos e Soluções. Editora Blucher, 2023.
+- Marengo, J.; Nobre, C. et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
+- Centro de Previsão de Tempo e Estudos Climáticos (CPTEC). Estudos climáticos para a região sudeste do Brasil. Ministério da Ciência, Tecnologia e Inovações, 2023.
 
 ## Questão de pesquisa
 
@@ -74,12 +76,6 @@ Analisar a variabilidade climática na cidade de Belo Horizonte- Minas Gerais, n
 - Selecionar variáveis climáticas e socioeconômicas relevantes para a previsão de ondas de calor.
 - Aplicar técnicas de aprendizado de máquina para desenvolver um modelo preditivo robusto e confiável.
 - Validar o modelo preditivo em diferentes cenários e temporalidades.
-
-4. Considerações Éticas e Sociais:
-
-- A pesquisa será conduzida em conformidade com os princípios éticos da pesquisa científica.
-- Os resultados da pesquisa serão divulgados de forma transparente e acessível à comunidade científica e à sociedade em geral.
-- Os impactos sociais e éticos da pesquisa serão considerados e mitigados.
 
 Referências:
 - Blog Mettzer - Diferença entre Objetivo geral e Objetivo Específico. Disponível em: https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/. Acesso em 02/03/2024.
@@ -283,6 +279,7 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 - MARENGO, J.; NOBRE, C.; et al. Mudanças climáticas e seus impactos na região sudeste do Brasil. Revista Brasileira de Meteorologia, v. 35, n. 4, p. 597-612, 2020.
 - Pereira, Gabriel et al. "Análise da Variabilidade da Precipitação para o Estado de Minas Gerais (1981-2017)." Revista Brasileira de Climatologia, v. 32, n. 2, p. 213-228, ano não especificado. Disponível em: <https://ojs.ufgd.edu.br/index.php/rbclima/article/view/14068/7309>. Acesso em: 09.03.2024.
 - Sangwan, O., & Kumar, A. (2020). Big Data Analytics using Deep LSTM Networks: A Case Study for Weather Prediction. International Journal of Advanced Research in Computer and Communication Engineering, 9(21), 4641-4646. Disponível em : <https://www.researchgate.net/profile/Om-Sangwan/publication/339857640_Big_Data_Analytics_using_Deep_LSTM_Networks_A_Case_Study_for_Weather_Prediction/links/5ea42643a6fdccd79451e02a/Big-Data-Analytics-using-Deep-LSTM-Networks-A-Case-Study-for-Weather-Prediction.pdf>. Acesso em 04.03.2024
+- SILVA, A. C. .; MEIRELES, E.; CAROLINO, K. .; BALLIANO , T. L. .; ALVES, D. C. . BELO HORIZONTE: VULNERABILIDADES E DESAFIOS NO ENFRENTAMENTO DOS EFEITOS DAS MUDANÇAS CLIMÁTICAS. Boletim de Conjuntura (BOCA), Boa Vista, v. 15, n. 43, p. 244–267, 2023. DOI: 10.5281/zenodo.8137243. Disponível em: https://revista.ioles.com.br/boca/index.php/revista/article/view/1661. Acesso em: 17 abr. 2024.
 
 
 
