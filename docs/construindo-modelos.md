@@ -8,27 +8,27 @@ Qual o tipo de cada um dos atributos?
 
 | Nome do Atributo             | Tipo             |
 |------------------------------|------------------|
-| Data                         | datetime64[ns]   | 
-| Estação                      | object           |
-| Latitude                     | int64            |
-| Longitude                    | int64            | 
-| Altitude                     | int64            | 
-| Temperatura (°C)             | int64            |
-| Ponto de Orvalho (°C)        | int64            | 
-| Umidade Relativa (%)         | int64            | 
-| Pressão Atmosférica (hPa)    | int64            |
-| Radiação Solar Global (W/m²) | int64            | 
-| Velocidade do Vento (m/s)    | int64            | 
-| Direção do Vento (°)         | int64            | 
-| Precipitação Total (mm)      | int64            | 
-| Precipitação Convectiva (mm) | int64            | 
-| Precipitação Estratiforme (mm)| int64           | 
-| Neve Total (mm)              | int64            | 
-| Cobertura de Nuvens (%)      | int64            | 
-| Visibilidade (km)            | int64            | 
-| Qualidade do Ar              | int64            | 
-| Sensação Térmica (°C)        | int64            | 
-| Índice UV                    | int64            |
+| Data                         | Quantitativo      | 
+| Estação                      | Nominal           |
+| Latitude                     | Quantitativo      |
+| Longitude                    | Quantitativo      | 
+| Altitude                     | Quantitativo      | 
+| Temperatura (°C)             | Quantitativo      |
+| Ponto de Orvalho (°C)        | Quantitativo      | 
+| Umidade Relativa (%)         | Quantitativo      | 
+| Pressão Atmosférica (hPa)    | Quantitativo      |
+| Radiação Solar Global (W/m²) | Quantitativo      | 
+| Velocidade do Vento (m/s)    | Quantitativo      | 
+| Direção do Vento (°)         | Quantitativo      | 
+| Precipitação Total (mm)      | Quantitativo      | 
+| Precipitação Convectiva (mm) | Quantitativo      | 
+| Precipitação Estratiforme (mm)| Quantitativo     | 
+| Neve Total (mm)              | Quantitativo      | 
+| Cobertura de Nuvens (%)      | Quantitativo      | 
+| Visibilidade (km)            | Quantitativo      | 
+| Qualidade do Ar              | Quantitativo      | 
+| Sensação Térmica (°C)        | Quantitativo      | 
+| Índice UV                    | Quantitativo      |
 
 # Outras bases de dados úteis (???)
 Justificar a utilização de outras bases 
