@@ -4,6 +4,32 @@ Justificar a definição / diferença da questão de pesquisa
 # Tipos de dados do dataset
 Qual o tipo de cada um dos atributos?
 
+## Descrição dos Atributos:
+
+| Nome do Atributo             | Tipo             |
+|------------------------------|------------------|
+| Data                         | datetime64[ns]   | 
+| Estação                      | object           |
+| Latitude                     | int64            |
+| Longitude                    | int64            | 
+| Altitude                     | int64            | 
+| Temperatura (°C)             | int64            |
+| Ponto de Orvalho (°C)        | int64            | 
+| Umidade Relativa (%)         | int64            | 
+| Pressão Atmosférica (hPa)    | int64            |
+| Radiação Solar Global (W/m²) | int64            | 
+| Velocidade do Vento (m/s)    | int64            | 
+| Direção do Vento (°)         | int64            | 
+| Precipitação Total (mm)      | int64            | 
+| Precipitação Convectiva (mm) | int64            | 
+| Precipitação Estratiforme (mm)| int64           | 
+| Neve Total (mm)              | int64            | 
+| Cobertura de Nuvens (%)      | int64            | 
+| Visibilidade (km)            | int64            | 
+| Qualidade do Ar              | int64            | 
+| Sensação Térmica (°C)        | int64            | 
+| Índice UV                    | int64            |
+
 # Outras bases de dados úteis (???)
 Justificar a utilização de outras bases 
 
