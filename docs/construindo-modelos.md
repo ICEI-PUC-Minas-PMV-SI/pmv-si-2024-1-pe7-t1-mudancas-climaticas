@@ -69,6 +69,29 @@ Algumas das etapas podem estar relacionadas à:
 
 Avalie quais etapas são importantes para o contexto dos dados que você está trabalhando, pois a qualidade dos dados e a eficácia do pré-processamento desempenham um papel fundamental no sucesso de modelo(s) de aprendizado de máquina. É importante entender o contexto do problema e ajustar as etapas de preparação de dados de acordo com as necessidades específicas de cada projeto.
 
+
+
+## Limpeza de Dados:
+Durante a fase inicial de preparação dos dados, os atributos foram categorizados como quantitativos, descritivos e nominais, a fim de caracterizá-los adequadamente. Observou-se que todos os atributos quantitativos continham dados negativos, os quais representavam casos em que não foi possível aferir ou computar os dados de determinado atributo. Para lidar com essa questão, foi utilizado o Excel para isolar esses componentes e, em seguida, os dados foram tratados manualmente. Posteriormente, os dados foram transferidos para o ambiente do Jupyter Notebook, onde, por meio de programação em Python, foi possível remover 100% dos valores negativos de forma automatizada.
+
+### Transformação de Dados:
+Após a limpeza inicial dos dados, foram realizadas as seguintes transformações:
+
+Normalização dos valores quantitativos: Os valores numéricos foram normalizados para uma escala específica, garantindo que fossem comparáveis entre si.
+Separação de Dados:
+Os dados foram divididos em conjuntos de treinamento, validação e teste, seguindo as boas práticas para avaliar o desempenho do modelo de maneira adequada.
+
+### Tratamento de Dados Temporais:
+Considerando a natureza temporal dos dados, foi utilizado o índice temporal para categorizar os registros por hora. Por exemplo, se a contagem começou em 2017 às 00:00, ela será encerrada em 2021 às 00:00 de acordo com os registros disponíveis.
+
+Visualização de Dados:
+Para garantir a qualidade e compatibilidade dos dados, foram criados gráficos que incluem:
+
+Mapas de Calor: Foram gerados mapas de calor utilizando as medidas de média e mediana das variáveis ao longo do tempo, permitindo uma visualização mais clara dos padrões climáticos.
+Gráficos de Variáveis: Além dos mapas de calor, foram criados gráficos para cada variável individual, permitindo uma análise mais detalhada de sua distribuição ao longo do período de tempo.
+Conclusão:
+A análise inicial dos dados climáticos de Belo Horizonte revelou que, após a limpeza dos dados, não foi necessária a conversão ou alteração dos mesmos. As técnicas utilizadas garantiram a integridade e a qualidade dos dados, possibilitando uma análise robusta dos padrões climáticos ao longo dos últimos cinco anos.
+
 # Descrição dos modelos
 
 Nesta seção, conhecendo os dados e de posse dos dados preparados, é hora de descrever os algoritmos de aprendizado de máquina selecionados para a construção dos modelos propostos. Inclua informações abrangentes sobre cada algoritmo implementado, aborde conceitos fundamentais, princípios de funcionamento, vantagens/limitações e justifique a escolha de cada um dos algoritmos. 
