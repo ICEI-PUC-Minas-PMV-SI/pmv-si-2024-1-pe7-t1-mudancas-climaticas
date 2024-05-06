@@ -79,7 +79,7 @@ Após a limpeza inicial dos dados, foram realizadas as seguintes transformaçõe
 
 Normalização dos valores quantitativos: Os valores numéricos foram normalizados para uma escala específica, garantindo que fossem comparáveis entre si.
 Separação de Dados:
-Os dados foram divididos em conjuntos de treinamento, validação e teste, seguindo as boas práticas para avaliar o desempenho do modelo de maneira adequada.
+foram realizados validação e teste, seguindo as boas práticas para avaliar o desempenho do modelo de maneira adequada.
 
 ### Tratamento de Dados Temporais:
 Considerando a natureza temporal dos dados, foi utilizado o índice temporal para categorizar os registros por hora. Por exemplo, se a contagem começou em 2017 às 00:00, ela será encerrada em 2021 às 00:00 de acordo com os registros disponíveis.
