@@ -39,17 +39,15 @@ Referências:
 
 ## Questão de pesquisa
 
-**Quais são os padrões espaciais identificados nas áreas da região sudeste com diferentes frequências e intensidades de ondas de calor, e de que maneira esses padrões têm evoluído ao longo do tempo?**
+**É possível desenvolver um modelo preditivo para a ocorrência de ondas de calor em Belo Horizonte, considerando variáveis espaciais e temporais relevantes?**
 
-Essa questão de pesquisa pretende mergulhar na análise das ondas de calor na região sudeste do Brasil, buscando compreender os padrões espaciais que se manifestam em diferentes localidades em termos de frequência e intensidade desses eventos climáticos. A intenção é explorar variáveis como latitude, altitude, cobertura vegetal e características geográficas para identificar regiões que apresentam comportamentos distintos em relação às ondas de calor.
+As ondas de calor representam um desafio crescente para Belo Horizonte, intensificadas pelas mudanças climáticas. Sua frequência, intensidade e duração aumentam, impactando negativamente a saúde pública, a infraestrutura e a economia da cidade. Diante dessa realidade, surge a necessidade de compreender e prever esses eventos de forma mais precisa e confiável.
 
-Ela visa ainda delinear as áreas geográficas mais propensas a eventos climáticos extremos, com foco especial em ondas de calor na região sudeste do Brasil. Identificar padrões espaciais e temporais desses eventos é crucial para o desenvolvimento de estratégias de adaptação e mitigação.
+A questão central desta pesquisa é se é possível desenvolver um modelo preditivo robusto para a ocorrência de ondas de calor em Belo Horizonte, utilizando técnicas avançadas de machine learning. Para isso, pretende-se investigar quais variáveis espaciais, temporais e socioeconômicas são relevantes para a previsão desses eventos climáticos extremos.
 
-Além disso, a pesquisa almeja investigar a evolução desses padrões ao longo do tempo, estabelecendo conexões entre a dinâmica espacial e possíveis mudanças climáticas. Essa abordagem mais aprofundada permitirá uma compreensão mais refinada das peculiaridades de diferentes áreas na região sudeste em relação às ondas de calor.
+A análise considerará dados históricos de temperatura, umidade, cobertura vegetal, altitude, variação temporal entre outras variáveis, a fim de identificar padrões e relações que possam contribuir para a construção de um modelo preciso e confiável.
 
-Consederando isso a abordagem adotada permitirá a criação de mapas que destacam as áreas mais suscetíveis a ondas de calor, facilitando a comunicação de informações cruciais para tomadores de decisão e comunidades locais.
-
-Tal análise temporal,será então, crucial para observar tendências, padrões cíclicos e possíveis anomalias climáticas que possam estar impactando a frequência e intensidade das ondas de calor. Esses insights serão fundamentais não apenas para um entendimento mais preciso do clima na região, mas também para orientar estratégias de adaptação e mitigação diante dos desafios impostos pelas mudanças climáticas. Em última análise, o objetivo é fornecer informações substanciais para tomadas de decisões embasadas em dados concretos, contribuindo para a resiliência da região frente às variações climáticas.
+Essa abordagem visa não apenas prever as ondas de calor com antecedência, mas também fornecer insights sobre os principais fatores que influenciam sua ocorrência e intensidade. Com um modelo preditivo sólido, será possível desenvolver estratégias mais eficazes de adaptação e mitigação, reduzindo os impactos desses eventos na cidade e contribuindo para a construção de um futuro mais resiliente às mudanças climáticas.
 
 ## Objetivos preliminares
 
