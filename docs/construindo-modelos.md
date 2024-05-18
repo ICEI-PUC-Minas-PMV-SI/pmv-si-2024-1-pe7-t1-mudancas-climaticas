@@ -2,7 +2,6 @@
 Justificar a definição / diferença da questão de pesquisa
 
 # Tipos de dados do dataset
-Qual o tipo de cada um dos atributos?
 
 ## Descrição dos Atributos:
 
