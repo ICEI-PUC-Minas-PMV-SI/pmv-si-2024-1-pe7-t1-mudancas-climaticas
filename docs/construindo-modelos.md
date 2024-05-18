@@ -9,10 +9,6 @@ Qual o tipo de cada um dos atributos?
 | Nome do Atributo             | Tipo             |
 |------------------------------|------------------|
 | Data                         | Quantitativo      | 
-| Estação                      | Nominal           |
-| Latitude                     | Quantitativo      |
-| Longitude                    | Quantitativo      | 
-| Altitude                     | Quantitativo      | 
 | Temperatura (°C)             | Quantitativo      |
 | Ponto de Orvalho (°C)        | Quantitativo      | 
 | Umidade Relativa (%)         | Quantitativo      | 
