@@ -25,8 +25,7 @@ Justificar a definição / diferença da questão de pesquisa
 | Sensação Térmica (°C)        | Quantitativo      | 
 | Índice UV                    | Quantitativo      |
 
-# Outras bases de dados úteis (???)
-Justificar a utilização de outras bases 
+# Outras bases de dados úteis 
 
 O dataset 'Hourly Weather Surface Brazil Southeast Region' é abrangente o bastante para abordar os objetivos do projeto e resolver o problema identificado. Este conjunto de dados oferece informações detalhadas sobre as condições climáticas na região sudeste do Brasil, incluindo Belo Horizonte, o que nos permite avaliar a variabilidade espacial e temporal do clima, identificar áreas suscetíveis a eventos climáticos extremos e analisar as tendências climáticas ao longo do tempo.
 
@@ -39,25 +38,149 @@ Portanto, com base nessas considerações, acreditamos firmemente que o dataset 
 # Preparação dos dados
 
 ## Limpeza de Dados:
+
 Durante a fase inicial de preparação dos dados, os atributos foram categorizados como quantitativos, descritivos e nominais, a fim de caracterizá-los adequadamente. Observou-se que todos os atributos quantitativos continham dados negativos, os quais representavam casos em que não foi possível aferir ou computar os dados de determinado atributo. Para lidar com essa questão, foi utilizado o Excel para isolar esses componentes e, em seguida, os dados foram tratados manualmente. Posteriormente, os dados foram transferidos para o ambiente do Jupyter Notebook, onde, por meio de programação em Python, foi possível remover 100% dos valores negativos de forma automatizada.
 
-### Transformação de Dados:
-Após a limpeza inicial dos dados, foram realizadas as seguintes transformações:
+Para iniciar a limpeza dos dados, foi realizada uma inspeção inicial para entender a estrutura do dataset e identificar possíveis problemas. Utilizamos o comando head para visualizar as primeiras linhas do dataset:
 
-Normalização dos valores quantitativos: Os valores numéricos foram normalizados para uma escala específica, garantindo que fossem comparáveis entre si.
-Separação de Dados:
-foram realizados validação e teste, seguindo as boas práticas para avaliar o desempenho do modelo de maneira adequada.
+```
+python
+print(base.head())
+
+```
+
+Essa inspeção permitiu observar a presença de valores negativos em atributos quantitativos, que são indicativos de dados faltantes ou erros de medição.
+
+## Remoção de Valores Negativos
+
+Os valores negativos foram considerados inválidos para os seguintes atributos quantitativos:
+
+```
+colunas = [
+'PRECIPITAÇÃO TOTAL, HORÁRIO (mm)',
+'PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)',
+'PRESSÃO ATMOSFERICA MAX.NA HORA ANT. (AUT) (mB)',
+'PRESSÃO ATMOSFERICA MIN. NA HORA ANT. (AUT) (mB)',
+'RADIACAO GLOBAL (Kj/m²)',
+'TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)',
+'TEMPERATURA DO PONTO DE ORVALHO (°C)',
+'TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)',
+'TEMPERATURA MÍNIMA NA HORA ANT. (AUT) (°C)',
+'TEMPERATURA ORVALHO MAX. NA HORA ANT. (AUT) (°C)',
+'TEMPERATURA ORVALHO MIN. NA HORA ANT. (AUT) (°C)',
+'UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)',
+'UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)',
+'UMIDADE RELATIVA DO AR, HORARIA (%)',
+'VENTO, DIREÇÃO HORARIA (gr) (° (gr))',
+'VENTO, RAJADA MAXIMA (m/s)',
+'VENTO, VELOCIDADE HORARIA (m/s)'
+]
+
+```
+- Substituímos os valores negativos por NaN (Not a Number) para facilitar a remoção posterior:
+
+```
+base[colunas] = base[colunas].mask(base[colunas] < 0)
+
+```
+- Em seguida, todas as linhas contendo NaN em qualquer uma das colunas foram removidas, garantindo que apenas dados completos fossem mantidos no dataset:
+
+```
+base = base.dropna()
+
+```
+
+## Remoção de Atributos Desnecessários
+
+Foram removidos atributos que não contribuíam diretamente para as análises quantitativas, como latitude, longitude e altitude, juntamente com outros atributos descritivos:
+
+```
+colunas_nao_numericas = ['index', 'Data', 'Hora', 'station_code', 'latitude', 'longitude', 'height', 'region', 'state', 'station']
+base_sem_nan = base.drop(columns=colunas_nao_numericas)
+
+```
+
+- Após essa etapa de limpeza, o dataset foi verificado novamente para assegurar que os valores negativos haviam sido removidos com sucesso:
+
+```
+print(base.head())
+
+```
+
+### Transformação de Dados
+
+#### Normalização dos Valores Quantitativos
+
+Para garantir que os valores quantitativos fossem comparáveis entre si, realizamos a normalização desses valores. Esta etapa envolve ajustar as escalas dos dados para que todos os atributos tenham uma faixa similar, o que é essencial para análises subsequentes e para a aplicação de algoritmos de aprendizado de máquina.
+
+#### Separação de Dados para Validação e Teste
+
+Seguindo as melhores práticas, os dados foram divididos em conjuntos de treinamento e teste. Isso permite a validação cruzada dos modelos e uma avaliação mais robusta do desempenho do modelo desenvolvido.
 
 ### Tratamento de Dados Temporais:
-Considerando a natureza temporal dos dados, foi utilizado o índice temporal para categorizar os registros por hora. Por exemplo, se a contagem começou em 2017 às 00:00, ela será encerrada em 2021 às 00:00 de acordo com os registros disponíveis.
 
-Visualização de Dados:
+#### Indexação Temporal
+
+Dada a natureza temporal dos dados, utilizamos um índice temporal para categorizar os registros por hora. Por exemplo, se a contagem começou em 2017 às 00:00, ela será indexada de acordo com a hora até 2021 às 00:00:
+
+```
+base['timestamp'] = pd.to_datetime(base['timestamp'])
+base.set_index('timestamp', inplace=True)
+
+```
+
+#### Visualização de Dados
+
 Para garantir a qualidade e compatibilidade dos dados, foram criados gráficos que incluem:
 
-Mapas de Calor: Foram gerados mapas de calor utilizando as medidas de média e mediana das variáveis ao longo do tempo, permitindo uma visualização mais clara dos padrões climáticos.
-Gráficos de Variáveis: Além dos mapas de calor, foram criados gráficos para cada variável individual, permitindo uma análise mais detalhada de sua distribuição ao longo do período de tempo.
-Conclusão:
-A análise inicial dos dados climáticos de Belo Horizonte revelou que, após a limpeza dos dados, não foi necessária a conversão ou alteração dos mesmos. As técnicas utilizadas garantiram a integridade e a qualidade dos dados, possibilitando uma análise robusta dos padrões climáticos ao longo dos últimos cinco anos.
+- Mapas de Calor: Foram gerados mapas de calor utilizando as medidas de média e mediana das variáveis ao longo do tempo, permitindo uma visualização mais clara dos padrões climáticos.
+- Gráficos de Variáveis: Além dos mapas de calor, foram criados gráficos para cada variável individual, permitindo uma análise mais detalhada de sua distribuição ao longo do período de tempo.
+
+##### Mapa de Calor da Matriz de Correlação
+
+Para garantir a qualidade e a compatibilidade dos dados, foi criado um mapa de calor que visualiza a correlação entre as variáveis numéricas. Este gráfico ajuda a identificar relações significativas entre os atributos do dataset.
+
+1) Primeiro, removemos as colunas não numéricas para calcular a matriz de correlação:
+
+```
+colunas_nao_numericas = ['index', 'Data', 'Hora', 'station_code', 'latitude', 'longitude', 'height', 'region', 'state', 'station']
+base_sem_nan = base.drop(columns=colunas_nao_numericas)
+
+```
+
+2) Em seguida, calculamos a matriz de correlação:
+
+```
+correlation_matrix = base_sem_nan.corr()
+```
+
+3) Utilizamos a biblioteca Seaborn para criar o mapa de calor:
+
+- Definindo o tamanho da figura
+```
+fig, ax = plt.subplots(figsize=(12, 10))
+```
+
+- Plotando o mapa de calor com paleta de cores do branco ao azul escuro
+```
+heatmap = sns.heatmap(correlation_matrix, annot=True, cmap='Blues', fmt=".2f", cbar_kws={'extend': 'both'}, center=0, ax=ax)
+```
+
+- Abreviando os rótulos dos eixos x e y
+
+```
+heatmap.set_xticklabels(heatmap.get_xticklabels(), rotation=45, ha='right')
+heatmap.set_yticklabels(heatmap.get_yticklabels(), rotation=0)
+
+plt.title('Mapa de Calor da Matriz de Correlação (sem colunas não numéricas)')
+plt.tight_layout(rect=[0, 0, 0.8, 0.8]) # Ajustando o layout para 20% menor
+plt.show()
+
+```
+
+O mapa de calor resultante fornece uma visualização clara das correlações entre variáveis, facilitando a identificação de padrões e relações significativas nos dados.
+
+A análise inicial dos dados climáticos de Belo Horizonte revelou que, após a limpeza dos dados, não foi necessária a conversão ou alteração adicional dos mesmos. As técnicas utilizadas garantiram a integridade e a qualidade dos dados, possibilitando uma análise robusta dos padrões climáticos ao longo dos últimos cinco anos.
 
 # Descrição dos modelos
 
