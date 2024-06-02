@@ -1,5 +1,11 @@
-# Pergunta orientada a dados (???)
-Justificar a definição / diferença da questão de pesquisa
+# Pergunta orientada a dados
+
+Embora ambas busquem conhecimento, as perguntas orientadas a dados e as questões de pesquisa se diferenciam em seus objetivos e naturezas. Por um lado, a pergunta orientada a dados é geralmente mais específica e técnica, focando em aspectos práticos e metodológicos da análise de dados. Essa pergunta busca identificar quais variáveis são mais relevantes, quais técnicas de modelagem podem ser aplicadas e como os dados podem ser melhor utilizados para atingir o objetivo específico de previsão. Ela se concentra em detalhes como a seleção de algoritmos, métodos de validação e métricas de desempenho, proporcionando um plano de ação claro e detalhado para a análise.
+
+Por outro lado, a questão de pesquisa é mais ampla e conceitual. Ela não apenas busca entender a viabilidade de um modelo preditivo, mas também pretende explorar os impactos mais amplos do fenômeno estudado. A questão de pesquisa considera o contexto social, econômico e ambiental em que o problema está inserido e busca compreender as implicações das descobertas para a sociedade. Ela abrange objetivos gerais do estudo, como a identificação de áreas vulneráveis, a análise das tendências temporais e espaciais e a formulação de estratégias de adaptação e mitigação.
+
+Em resumo, enquanto a pergunta orientada a dados se aprofunda nos detalhes técnicos e metodológicos necessários para construir e avaliar o modelo preditivo, a questão de pesquisa aborda o problema de forma holística, considerando tanto os aspectos técnicos quanto as implicações mais amplas das mudanças climáticas e das ondas de calor para Belo Horizonte e sua população.
+
 
 # Tipos de dados do dataset
 
