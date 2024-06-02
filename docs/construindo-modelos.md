@@ -184,11 +184,129 @@ A análise inicial dos dados climáticos de Belo Horizonte revelou que, após a 
 
 # Descrição dos modelos
 
-Nesta seção, conhecendo os dados e de posse dos dados preparados, é hora de descrever os algoritmos de aprendizado de máquina selecionados para a construção dos modelos propostos. Inclua informações abrangentes sobre cada algoritmo implementado, aborde conceitos fundamentais, princípios de funcionamento, vantagens/limitações e justifique a escolha de cada um dos algoritmos. 
+Nesta seção, detalharemos os algoritmos de aprendizado de máquina utilizados para construir os modelos propostos: 
+- K-Nearest Neighbors (KNN) para classificação e Regressão Linear para regressão.
 
-Explore aspectos específicos, como o ajuste dos parâmetros livres de cada algoritmo. Lembre-se de experimentar parâmetros diferentes e principalmente, de justificar as escolhas realizadas.
+Incluiremos informações sobre os conceitos fundamentais, princípios de funcionamento, vantagens e limitações, bem como justificativas para a escolha e ajuste dos parâmetros de cada algoritmo.
 
-Como parte da comprovação de construção dos modelos, um vídeo de demonstração com todas as etapas de pré-processamento e de execução dos modelos deverá ser entregue. Este vídeo poderá ser do tipo _screencast_ e é imprescindível a narração contemplando a demonstração de todas as etapas realizadas.
+## Modelo 1: K-Nearest Neighbors (KNN)
+
+O algoritmo K-Nearest Neighbors (KNN) é um dos métodos de aprendizado supervisionado mais simples para classificação e regressão. Funciona com base na ideia de que uma amostra será semelhante a suas 'k' vizinhas mais próximas no espaço das características.
+
+### Princípios de Funcionamento
+- Distância: KNN utiliza uma métrica de distância, como a Euclidiana, para calcular a proximidade entre os pontos de dados.
+- Classificação: Para classificar um ponto desconhecido, o algoritmo encontra os 'k' pontos de dados mais próximos e atribui a classe mais comum (no caso de classificação) entre esses vizinhos.
+- Parâmetros: O principal parâmetro é 'k', o número de vizinhos a considerar.
+- Vantagens:
+    - Simplicidade: Fácil de entender e implementar.
+    - Flexibilidade: Não faz suposições sobre a distribuição dos dados.
+    - Eficiência para Dados Pequenos: Funciona bem com conjuntos de dados pequenos e moderadamente grandes.
+- Limitações:
+    - Computacionalmente Intensivo: Ineficiente para grandes conjuntos de dados porque calcula a distância para cada ponto de dados.
+    - Sensibilidade ao Ruído: Pode ser influenciado por ruídos e outliers nos dados.
+    - Escalabilidade: Performance diminui drasticamente com o aumento do número de features e de dados.
+
+### Ajuste de Parâmetros e Justificativa
+
+O valor de 'k' determina o número de vizinhos considerados. Escolher um 'k' muito pequeno pode tornar o modelo sensível ao ruído, enquanto um 'k' muito grande pode diluir a classificação ao considerar muitos pontos de dados irrelevantes. Utilizamos MinMaxScaler para normalizar as características, pois KNN é sensível às diferentes escalas das características.
+
+### Implementação e Ajuste
+```
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+```
+
+### Divisão dos dados
+```
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+```
+
+### Escalamento dos dados
+```
+scaler = MinMaxScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
+
+### Treinamento do modelo KNN
+```
+model = KNeighborsClassifier(n_neighbors=5)
+model.fit(X_train_scaled, y_train)
+```
+### Avaliação do modelo
+```
+y_pred = model.predict(X_test_scaled)
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+```
+O valor de 'k=5' foi escolhido com base em experimentação e validação cruzada para balancear a precisão e a robustez do modelo.
+
+## Modelo 2: Regressão Linear
+
+A regressão linear é um método estatístico para modelar a relação entre uma variável dependente e uma ou mais variáveis independentes, assumindo que a relação é linear.
+
+### Princípios de Funcionamento
+
+Mínimos Quadrados Ordinários (OLS): Os coeficientes são ajustados minimizando a soma dos quadrados dos erros entre os valores preditos e os valores reais.
+
+- Vantagens
+    - Interpretabilidade: Os coeficientes têm uma interpretação clara e direta.
+    - Simplicidade: Fácil de implementar e entender.
+    - Eficiência: Computacionalmente eficiente para treinamento e predição.
+- Limitações
+    - Assunção de Linearidade: Assume que a relação entre as variáveis independentes e dependentes é linear.
+    - Sensibilidade a Outliers: Outliers podem ter um grande impacto na estimativa dos coeficientes.
+    - Multicolinearidade: A presença de correlações altas entre variáveis independentes pode afetar a estabilidade das estimativas.
+      
+### Ajuste de Parâmetros e Justificativa
+- Regularização: Métodos como Lasso e Ridge podem ser utilizados para lidar com multicolinearidade, embora não aplicados neste modelo básico.
+- Validação Cruzada: Usada para validar o desempenho do modelo e ajustar os parâmetros, se necessário.
+
+### Implementação e Ajuste
+
+```
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+import numpy as np
+```
+
+### Divisão dos dados
+
+```
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+### Treinamento do modelo de Regressão Linear
+```
+model = LinearRegression()
+model.fit(X_train, y_train)
+```
+
+### Previsões
+```
+y_pred = model.predict(X_test)
+```
+
+### Avaliação do modelo
+```
+mse = mean_squared_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+print(f'Erro quadrático médio: {mse}')
+print(f'Raiz do erro quadrático médio: {rmse}')
+```
+
+### Visualização das previsões
+```
+plt.scatter(y_test, y_pred)
+plt.xlabel('Valores Reais')
+plt.ylabel('Previsões')
+plt.title('Valores Reais vs Previsões')
+plt.show()
+```
+A regressão linear simples foi escolhida pela sua interpretabilidade e facilidade de implementação. O ajuste foi feito minimizando o MSE, o que é um procedimento padrão para este tipo de modelo.
 
 # Avaliação dos modelos criados
 
