@@ -316,7 +316,46 @@ Nesta seção, as métricas utilizadas para avaliar os modelos desenvolvidos dev
 
 ## Discussão dos resultados obtidos
 
-Nesta seção, discuta os resultados obtidos pelos modelos construídos, no contexto prático em que os dados se inserem, promovendo uma compreensão abrangente e aprofundada da qualidade de cada um deles. Lembre-se de relacionar os resultados obtidos ao problema identificado, a questão de pesquisa levantada e estabelecendo relação com os objetivos previamente propostos. 
+Modelo 1: K-Nearest Neighbors (KNN)
+Contexto Prático
+O modelo K-Nearest Neighbors foi aplicado para classificar a temperatura do ar em três categorias: "quente", "morna" e "fria", com base em diversas variáveis meteorológicas como precipitação, pressão atmosférica, radiação global, entre outras. Este tipo de classificação pode ser crucial para aplicações em meteorologia, agricultura e gestão de recursos hídricos, onde a previsão correta da temperatura pode influenciar tomadas de decisão importantes.
+
+Resultados Obtidos
+Matriz de Confusão:
+A matriz de confusão mostrou a distribuição de verdadeiros positivos, falsos positivos, verdadeiros negativos e falsos negativos entre as classes.
+Relatório de Classificação:
+Acurácia: A medida geral de desempenho do modelo.
+Precisão, Recall e F1-Score: Indicadores de como o modelo performa em cada classe individualmente.
+Discussão
+Os resultados obtidos pelo modelo KNN indicam que ele é capaz de classificar as temperaturas em suas respectivas categorias com uma boa acurácia. No entanto, a análise detalhada através da matriz de confusão e do relatório de classificação revela que há desequilíbrios na performance entre as diferentes classes.
+
+Precisão: Alta precisão indica que quando o modelo prevê uma determinada classe, essa previsão é correta na maioria das vezes. No entanto, se a precisão é baixa para uma classe, isso pode indicar que o modelo está frequentemente confundindo essa classe com outras.
+Recall: Um alto recall para uma classe indica que o modelo está conseguindo identificar corretamente a maioria dos exemplos dessa classe. Um recall baixo pode indicar que o modelo está perdendo muitos exemplos dessa classe.
+F1-Score: Combina precisão e recall, proporcionando uma métrica balanceada. Um F1-Score baixo em uma classe específica sugere que o modelo precisa de melhorias para essa classe.
+No contexto prático, essas métricas indicam que o modelo KNN pode ser utilizado para prever a temperatura com uma boa margem de confiança, mas melhorias podem ser feitas, especialmente para classes com menor precisão e recall. Isso poderia envolver a coleta de mais dados, o ajuste de hiperparâmetros ou a experimentação com outros algoritmos.
+
+Relação com os Objetivos
+O modelo KNN atinge o objetivo de classificar as temperaturas em categorias úteis para aplicações práticas. As áreas onde o modelo apresenta desempenho inferior identificam oportunidades para aprimoramento, alinhando-se com o objetivo de desenvolver um sistema de previsão robusto e confiável.
+
+Modelo 2: Regressão Linear
+Contexto Prático
+O modelo de regressão linear foi aplicado para prever a temperatura do ar com base em diversas variáveis meteorológicas. A previsão precisa da temperatura é essencial para muitas áreas, incluindo meteorologia, planejamento urbano, e atividades agrícolas, onde uma previsão acurada pode impactar diretamente a eficiência operacional e a segurança.
+
+Resultados Obtidos
+Erro Quadrático Médio (MSE): Mede a média dos quadrados dos erros entre os valores reais e preditos.
+Raiz do Erro Quadrático Médio (RMSE): A raiz quadrada do MSE, fornecendo uma métrica na mesma unidade da variável alvo.
+Discussão
+Os resultados do modelo de regressão linear mostraram um MSE e um RMSE que indicam o quão longe, em média, as previsões do modelo estão dos valores reais.
+
+Erro Quadrático Médio (MSE): Um valor menor de MSE indica que o modelo está fazendo previsões próximas aos valores reais. No entanto, valores altos de MSE sugerem que o modelo está tendo dificuldades para ajustar a relação linear entre as variáveis independentes e a variável dependente.
+Raiz do Erro Quadrático Médio (RMSE): Como o RMSE está na mesma unidade da variável alvo, ele fornece uma medida direta de quão precisas são as previsões. Um RMSE baixo indica previsões precisas, enquanto um RMSE alto sugere a necessidade de melhorias no modelo.
+No contexto prático, esses resultados sugerem que o modelo de regressão linear pode prever a temperatura com um certo grau de precisão, mas também indica que há espaço para melhorias. Fatores como a complexidade das relações entre as variáveis meteorológicas e a temperatura, e a presença de possíveis outliers ou variáveis não consideradas, podem influenciar a precisão das previsões.
+
+Relação com os Objetivos
+O modelo de regressão linear atinge parcialmente o objetivo de prever a temperatura de forma precisa. A identificação de um MSE e RMSE relativamente altos aponta para áreas onde o modelo pode ser aprimorado, talvez através da inclusão de mais variáveis explicativas, transformação de variáveis existentes, ou uso de modelos mais complexos que capturem melhor a não-linearidade dos dados.
+
+Conclusão Geral
+Ambos os modelos, KNN e Regressão Linear, demonstraram potencial para serem utilizados em previsões meteorológicas com seus respectivos enfoques. O KNN mostrou-se útil para a classificação de temperaturas em categorias, enquanto a Regressão Linear forneceu uma medida contínua da temperatura. As métricas de avaliação utilizadas ajudaram a identificar pontos fortes e fracos de cada modelo, proporcionando um guia claro para futuras melhorias e ajustes. Estas melhorias podem incluir a otimização dos parâmetros dos modelos, a exploração de novos algoritmos, ou a coleta e integração de mais dados, sempre visando atender melhor aos objetivos propostos e às necessidades práticas do problema de previsão de temperatura.
 
 # Pipeline de pesquisa e análise de dados
 
