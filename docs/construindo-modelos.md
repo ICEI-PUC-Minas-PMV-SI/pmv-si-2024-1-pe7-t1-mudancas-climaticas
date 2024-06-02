@@ -312,7 +312,81 @@ A regressão linear simples foi escolhida pela sua interpretabilidade e facilida
 
 ## Métricas utilizadas
 
-Nesta seção, as métricas utilizadas para avaliar os modelos desenvolvidos deverão ser apresentadas (p. ex.: acurácia, precisão, recall, F1-Score, MSE etc.). A escolha de cada métrica deverá ser justificada, pois esta escolha é essencial para avaliar de forma mais assertiva a qualidade do modelo construído. 
+
+A avaliação dos modelos desenvolvidos é uma etapa crucial para garantir que eles performem bem e sejam úteis para suas respectivas tarefas. As métricas escolhidas para avaliação variam conforme o tipo de problema (classificação ou regressão) e os objetivos específicos do modelo.
+
+1. Avaliação do Modelo K-Nearest Neighbors (KNN)
+Métricas Utilizadas
+Matriz de Confusão
+Relatório de Classificação (Classification Report)
+Justificativa das Métricas
+Matriz de Confusão:
+
+Descrição: A matriz de confusão é uma ferramenta que permite visualizar o desempenho de um algoritmo de classificação. Mostra a quantidade de verdadeiros positivos, falsos positivos, verdadeiros negativos e falsos negativos.
+Justificativa: É essencial para entender como o modelo está classificando corretamente ou erroneamente as diferentes classes, fornecendo uma visão clara das áreas onde o modelo está errando.
+Relatório de Classificação:
+
+Descrição: Inclui métricas como precisão (precision), recall, F1-Score e acurácia para cada classe.
+Justificativa:
+Precisão (Precision): Mede a proporção de verdadeiros positivos entre as predições positivas feitas pelo modelo.
+Recall: Mede a proporção de verdadeiros positivos detectados em relação ao total de verdadeiros positivos.
+F1-Score: Combina precisão e recall em uma única métrica, sendo a média harmônica dessas duas. É útil quando há um trade-off entre precisão e recall.
+Acurácia: Mede a proporção de todas as previsões corretas entre o total de previsões. É uma métrica geral de desempenho.
+Avaliação do Modelo
+python
+Copiar código
+# Avaliação do modelo
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Previsões
+y_pred = model.predict(X_test_scaled)
+
+# Matriz de Confusão
+print(confusion_matrix(y_test, y_pred))
+
+# Relatório de Classificação
+print(classification_report(y_test, y_pred))
+2. Avaliação do Modelo de Regressão Linear
+Métricas Utilizadas
+Erro Quadrático Médio (MSE)
+Raiz do Erro Quadrático Médio (RMSE)
+Justificativa das Métricas
+Erro Quadrático Médio (MSE):
+
+Descrição: Mede a média dos quadrados dos erros, ou seja, a média das diferenças quadradas entre os valores reais e os valores preditos.
+Justificativa: O MSE penaliza grandes erros de predição mais severamente do que erros menores, o que é útil para garantir que o modelo minimize grandes desvios nas predições.
+Raiz do Erro Quadrático Médio (RMSE):
+
+Descrição: É a raiz quadrada do MSE. É uma métrica mais interpretável porque está na mesma unidade que a variável alvo.
+Justificativa: O RMSE fornece uma medida clara de quão longe, em média, as previsões do modelo estão dos valores reais. É uma métrica intuitiva para avaliar a precisão das previsões.
+Avaliação do Modelo
+python
+Copiar código
+from sklearn.metrics import mean_squared_error
+import numpy as np
+
+# Previsões
+y_pred = model.predict(X_test)
+
+# Calculando o erro quadrático médio
+mse = mean_squared_error(y_test, y_pred)
+
+# Calculando a raiz quadrada do erro quadrático médio
+rmse = np.sqrt(mse)
+
+print(f'Erro quadrático médio: {mse}')
+print(f'Raiz do erro quadrático médio: {rmse}')
+Resumo das Métricas e Justificativas
+Classificação (KNN):
+
+Matriz de Confusão: Esclarece a distribuição dos acertos e erros entre as classes.
+Relatório de Classificação (Precision, Recall, F1-Score, Acurácia): Oferece uma análise detalhada de como o modelo performa em cada classe, ajudando a identificar desequilíbrios e áreas de melhoria.
+Regressão (Linear Regression):
+
+MSE: Avalia a média das diferenças quadradas entre os valores reais e preditos, penalizando erros maiores.
+RMSE: Fornece uma métrica de erro na mesma unidade da variável alvo, facilitando a interpretação dos resultados.
+A escolha dessas métricas permite uma avaliação abrangente e assertiva da qualidade dos modelos, alinhando-se com os objetivos específicos de cada tarefa de previsão.
+
 
 ## Discussão dos resultados obtidos
 
