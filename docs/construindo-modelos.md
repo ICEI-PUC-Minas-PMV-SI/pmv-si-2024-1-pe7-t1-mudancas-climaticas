@@ -320,7 +320,7 @@ Nesta seção, discuta os resultados obtidos pelos modelos construídos, no cont
 
 # Pipeline de pesquisa e análise de dados
 
-## algoritmo K-Nearest Neighbors (KNN)
+## Algoritmo K-Nearest Neighbors (KNN)
 O algoritmo K-Nearest Neighbors (KNN) é um método de aprendizado supervisionado utilizado tanto para classificação quanto para regressão. No caso de classificação, o algoritmo atribui a classe de um dado exemplo com base nas classes dos seus k vizinhos mais próximos no espaço das features. O KNN é simples de implementar e entender, sendo eficaz para problemas onde a relação entre as features e a variável alvo é complexa e não-linear.
 
 Principais características do KNN:
@@ -475,4 +475,201 @@ def prever_categoria_temperatura(model, scaler, novos_dados):
 novos_dados = [0, 882, 197, 14, 6, 5, 5, 8, 4]
 categoria_pred = prever_categoria_temperatura(model, scaler, novos_dados)
 print(f'A temperatura prevista é: {categoria_pred}')
+
+## Algoritmo Utilizado: Regressão Linear
+A regressão linear é um método de aprendizado supervisionado usado para prever um valor contínuo. O objetivo é encontrar a relação linear entre as variáveis independentes (features) e a variável dependente (target). O modelo de regressão linear tenta ajustar uma linha (ou plano, em múltiplas dimensões) que minimiza a soma dos quadrados das diferenças entre os valores reais e os valores preditos.
+
+Principais características da Regressão Linear:
+
+Simplicidade: Fácil de implementar e interpretar.
+Eficiência: Rápido para treinar e prever.
+Assumptions: Pressupõe que há uma relação linear entre as features e o target.
+Aplicabilidade: Útil quando se deseja uma interpretação clara das influências das features sobre o target.
+1. Coleta de Dados
+Descrição:
+
+Objetivo: Obter dados relevantes e de qualidade para análise.
+Fontes de dados: Arquivos CSV.
+Exemplo prático:
+
+python
+Copiar código
+import pandas as pd
+
+# Importando o arquivo CSV com os dados
+df = pd.read_csv('C:/Users/lucas/Downloads/mediasDiarias_modificado.csv')
+
+### Visualizar as primeiras linhas do dataframe
+print(df.head())
+2. Preparação dos Dados
+Descrição:
+
+Objetivo: Preparar os dados para análise, lidando com valores ausentes e convertendo tipos de dados.
+Passos:
+
+Verificar e tratar valores ausentes:
+python
+Copiar código
+### Verificar se há valores ausentes
+print(df.isnull().sum())
+
+### Tratar valores ausentes
+df = df.dropna()
+Converter a coluna 'Data' para o formato datetime:
+python
+Copiar código
+### Converter a coluna 'Data' para o formato datetime
+df['Data'] = pd.to_datetime(df['Data'])
+3. Seleção e Engenharia de Features
+Descrição:
+
+Objetivo: Selecionar as variáveis independentes (features) e a variável dependente (target) para a construção do modelo.
+Passos:
+
+Selecionar as features (variáveis independentes) e o target (variável dependente):
+python
+Copiar código
+X = df[['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)', 
+        'PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)', 
+        'RADIACAO GLOBAL (Kj/m²)', 
+        'TEMPERATURA DO PONTO DE ORVALHO (°C)', 
+        'UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)', 
+        'UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)', 
+        'UMIDADE RELATIVA DO AR, HORARIA (%)', 
+        'VENTO, RAJADA MAXIMA (m/s)', 
+        'VENTO, VELOCIDADE HORARIA (m/s)']]
+y = df['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)']
+4. Divisão dos Dados
+Descrição:
+
+Objetivo: Dividir os dados em conjuntos de treinamento e teste para avaliação do modelo.
+Passos:
+
+Dividir os dados em conjuntos de treinamento e teste:
+python
+Copiar código
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+5. Construção e Treinamento do Modelo
+Descrição:
+
+Objetivo: Construir e treinar um modelo de aprendizado de máquina com os dados preparados.
+Passos:
+
+Construir e treinar o modelo de Regressão Linear:
+python
+Copiar código
+from sklearn.linear_model import LinearRegression
+
+### Modelo de regressão linear
+model = LinearRegression()
+
+### Treinamento com os dados de treino
+model.fit(X_train, y_train)
+6. Avaliação do Modelo
+Descrição:
+
+Objetivo: Avaliar o desempenho do modelo utilizando métricas adequadas.
+Passos:
+
+Fazer previsões e avaliar o modelo:
+python
+Copiar código
+from sklearn.metrics import mean_squared_error
+import numpy as np
+
+### Previsões com os dados de teste
+y_pred = model.predict(X_test)
+
+### Calculando o erro quadrático médio
+mse = mean_squared_error(y_test, y_pred)
+
+### Calculando a raiz quadrada do erro quadrático médio
+rmse = np.sqrt(mse)
+print(f'Erro quadrático médio: {mse}')
+print(f'Raiz do erro quadrático médio: {rmse}')
+7. Visualização dos Resultados
+Descrição:
+
+Objetivo: Visualizar os resultados das previsões para entender melhor o desempenho do modelo.
+Passos:
+
+Plotar os valores reais vs previsões:
+python
+Copiar código
+import matplotlib.pyplot as plt
+
+plt.scatter(y_test, y_pred)
+plt.xlabel('Valores Reais')
+plt.ylabel('Previsões')
+plt.title('Valores Reais vs Previsões')
+plt.show()
+8. Previsão com Intervalo de Confiança
+Descrição:
+
+Objetivo: Fazer previsões para novos dados e calcular intervalos de confiança para essas previsões.
+Passos:
+
+Função para prever a temperatura com intervalo de confiança:
+python
+Copiar código
+from scipy import stats
+import numpy as np
+
+def prever_intervalo_temperatura(model, X, y, novos_dados, intervalo=0.95):
+    # Adiciona a interceptação (bias) aos novos dados
+    novos_dados = np.array(novos_dados).reshape(1, -1)
+    
+    # Faz a previsão
+    previsoes = model.predict(novos_dados)
+    
+    # Número de amostras de treino
+    n = len(X)
+    
+    # Número de features
+    p = X.shape[1]
+    
+    # Intervalo de confiança
+    alpha = 1 - intervalo
+    
+    # Fazer previsões no conjunto de treinamento para calcular os resíduos
+    y_train_pred = model.predict(X)
+    residuos = y - y_train_pred
+    
+    # Calcular a variância dos resíduos
+    residuo_variancia = np.var(residuos, ddof=p)
+    
+    # Calcular a matriz de projeção
+    X_b = np.c_[np.ones((n, 1)), X]
+    X_new_b = np.c_[np.ones((1, 1)), novos_dados]
+    hat_matrix = X_new_b.dot(np.linalg.inv(X_b.T.dot(X_b)).dot(X_new_b.T))
+    
+    # Calcular a margem de erro
+    margem_erro = stats.t.ppf(1 - alpha / 2, n - p - 1) * np.sqrt(residuo_variancia * (1 + hat_matrix))
+    
+    intervalo_inferior = previsoes - margem_erro
+    intervalo_superior = previsoes + margem_erro
+    
+    return intervalo_inferior[0], previsoes[0], intervalo_superior[0]
+Exemplo de uso da função:
+python
+Copiar código
+#### Sequência dos Dados
+#### PRECIPITAÇÃO TOTAL, HORÁRIO (mm)
+#### PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)
+#### RADIACAO GLOBAL (Kj/m²)
+#### TEMPERATURA DO PONTO DE ORVALHO (°C)
+#### UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)
+#### UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)
+#### UMIDADE RELATIVA DO AR, HORARIA (%)
+#### VENTO, RAJADA MAXIMA (m/s)
+#### VENTO, VELOCIDADE HORARIA (m/s)
+
+### Exemplo de uso da função
+novos_dados = [0, 882, 197, 14, 6, 5, 5, 8, 4]
+intervalo_inferior, previsao, intervalo_superior = prever_intervalo_temperatura(model, X_train, y_train, novos_dados)
+print(f'Intervalo de Temperatura: ({intervalo_inferior}, {previsao}, {intervalo_superior})')
+
+
 
