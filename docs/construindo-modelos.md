@@ -202,4 +202,159 @@ Nesta seção, discuta os resultados obtidos pelos modelos construídos, no cont
 
 # Pipeline de pesquisa e análise de dados
 
-Em pesquisa e experimentação em sistemas de informação, um pipeline de pesquisa e análise de dados refere-se a um conjunto organizado de processos e etapas que um profissional segue para realizar a coleta, preparação, análise e interpretação de dados durante a fase de pesquisa e desenvolvimento de modelos. Esse pipeline é essencial para extrair _insights_ significativos, entender a natureza dos dados e, construir modelos de aprendizado de máquina eficazes. 
+## algoritmo K-Nearest Neighbors (KNN)
+O algoritmo K-Nearest Neighbors (KNN) é um método de aprendizado supervisionado utilizado tanto para classificação quanto para regressão. No caso de classificação, o algoritmo atribui a classe de um dado exemplo com base nas classes dos seus k vizinhos mais próximos no espaço das features. O KNN é simples de implementar e entender, sendo eficaz para problemas onde a relação entre as features e a variável alvo é complexa e não-linear.
+
+Principais características do KNN:
+
+Intuitivo: Baseia-se na ideia de que exemplos semelhantes estão próximos uns dos outros.
+Versátil: Pode ser usado para problemas de classificação e regressão.
+Não Paramétrico: Não faz suposições sobre a distribuição dos dados.
+Eficiente para pequenos conjuntos de dados: Embora possa ser computacionalmente custoso para grandes volumes de dados.
+1. Coleta de Dados
+Descrição:
+
+Objetivo: Obter dados relevantes e de qualidade para análise.
+Fontes de dados: Arquivos CSV.
+Exemplo prático:
+
+python
+Copiar código
+import pandas as pd
+
+### Importando o arquivo CSV com os dados
+df = pd.read_csv('C:/Users/lucas/Downloads/mediasDiarias_modificado.csv')
+
+### Visualizar as primeiras linhas do dataframe
+print(df.head())
+2. Preparação dos Dados
+Descrição:
+
+Objetivo: Preparar os dados para análise, lidando com valores ausentes e convertendo tipos de dados.
+Passos:
+
+Verificar e tratar valores ausentes:
+python
+Copiar código
+### Verificar se há valores ausentes
+print(df.isnull().sum())
+
+### Tratar valores ausentes, se necessário
+df = df.dropna()
+Converter a coluna 'Data' para o formato datetime:
+python
+Copiar código
+### Converter a coluna 'Data' para o formato datetime
+df['Data'] = pd.to_datetime(df['Data'])
+Categorizar a temperatura:
+python
+Copiar código
+### Função para categorizar a temperatura
+def categorize_temperature(temp):
+    if temp > 25:
+        return 'quente'
+    elif 18 < temp <= 25:
+        return 'morna'
+    else:
+        return 'fria'
+
+df['Categoria'] = df['TEMPERATURA DO AR - BULBO SECO, HORARIA (°C)'].apply(categorize_temperature)
+3. Seleção e Engenharia de Features
+Descrição:
+
+Objetivo: Selecionar as variáveis independentes (features) e a variável dependente (target) para a construção do modelo.
+Passos:
+
+Selecionar as features (variáveis independentes) e o target (variável dependente):
+python
+Copiar código
+X = df[['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)', 
+        'PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)', 
+        'RADIACAO GLOBAL (Kj/m²)', 
+        'TEMPERATURA DO PONTO DE ORVALHO (°C)', 
+        'UMIDADE REL. MAX. NA HORA ANT. (AUT) (%)', 
+        'UMIDADE REL. MIN. NA HORA ANT. (AUT) (%)', 
+        'UMIDADE RELATIVA DO AR, HORARIA (%)', 
+        'VENTO, RAJADA MAXIMA (m/s)', 
+        'VENTO, VELOCIDADE HORARIA (m/s)']]
+y = df['Categoria']
+4. Divisão dos Dados
+Descrição:
+
+Objetivo: Dividir os dados em conjuntos de treinamento e teste para avaliação do modelo.
+Passos:
+
+Dividir os dados em conjuntos de treinamento e teste:
+python
+Copiar código
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+5. Pré-processamento dos Dados
+Descrição:
+
+Objetivo: Escalar os dados para que todas as features estejam na mesma escala.
+Passos:
+
+Escalar os dados:
+python
+Copiar código
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+6. Construção e Treinamento do Modelo
+Descrição:
+
+Objetivo: Construir e treinar um modelo de aprendizado de máquina com os dados preparados.
+Passos:
+
+Construir e treinar o modelo K-Nearest Neighbors (KNN):
+python
+Copiar código
+from sklearn.neighbors import KNeighborsClassifier
+
+model = KNeighborsClassifier(n_neighbors=5)
+model.fit(X_train_scaled, y_train)
+7. Avaliação do Modelo
+Descrição:
+
+Objetivo: Avaliar o desempenho do modelo utilizando métricas adequadas.
+Passos:
+
+Fazer previsões e avaliar o modelo:
+python
+Copiar código
+from sklearn.metrics import classification_report, confusion_matrix
+
+y_pred = model.predict(X_test_scaled)
+
+### Avaliação do modelo
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+8. Interpretação dos Resultados
+Descrição:
+
+Objetivo: Interpretar os resultados das previsões para obter insights significativos.
+Passos:
+
+Função para prever a categoria de temperatura para novos dados:
+python
+Copiar código
+import numpy as np
+
+def prever_categoria_temperatura(model, scaler, novos_dados):
+    # Escalar os novos dados
+    novos_dados_scaled = scaler.transform(np.array(novos_dados).reshape(1, -1))
+    
+    # Fazer a previsão
+    categoria_pred = model.predict(novos_dados_scaled)
+    
+    return categoria_pred[0]
+
+### Exemplo de uso da função
+novos_dados = [0, 882, 197, 14, 6, 5, 5, 8, 4]
+categoria_pred = prever_categoria_temperatura(model, scaler, novos_dados)
+print(f'A temperatura prevista é: {categoria_pred}')
+
