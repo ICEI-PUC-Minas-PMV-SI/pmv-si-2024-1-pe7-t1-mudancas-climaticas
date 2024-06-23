@@ -183,6 +183,9 @@ plt.tight_layout(rect=[0, 0, 0.8, 0.8]) # Ajustando o layout para 20% menor
 plt.show()
 
 ```
+![320312498-7592f817-8d1d-4d78-99be-fa4d2a5445dc](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/96f00cd3-2dce-451a-a151-3fee75ef5119)
+
+
 
 O mapa de calor resultante fornece uma visualização clara das correlações entre variáveis, facilitando a identificação de padrões e relações significativas nos dados.
 
