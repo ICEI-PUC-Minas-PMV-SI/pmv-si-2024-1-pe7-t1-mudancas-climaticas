@@ -251,6 +251,8 @@ y_pred = model.predict(X_test_scaled)
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 ```
+
+
 O valor de 'k=5' foi escolhido com base em experimentação e validação cruzada para balancear a precisão e a robustez do modelo.
 
 ## Modelo 2: Regressão Linear
@@ -315,6 +317,9 @@ plt.ylabel('Previsões')
 plt.title('Valores Reais vs Previsões')
 plt.show()
 ```
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas/assets/81424548/c29491e3-9f7b-46e7-bd96-e60bab33969a)
+
 A regressão linear simples foi escolhida pela sua interpretabilidade e facilidade de implementação. O ajuste foi feito minimizando o MSE, o que é um procedimento padrão para este tipo de modelo.
 
 # Avaliação dos modelos criados
