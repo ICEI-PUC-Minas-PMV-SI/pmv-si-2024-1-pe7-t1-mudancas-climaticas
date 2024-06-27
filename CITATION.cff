@@ -1,29 +1,23 @@
 cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title:
+message: "Pyhton"
+title: "Modelo de Previsão de Temperatura"
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
-    affiliation: PUC Minas
-    family-names:
-    given-names:
+  - family-names: "Leite de Aguiar"
+    given-names: "Caroline Clarissa"
+  - family-names: "Ramos da Silva"
+    given-names: "Krysthyan Jhonny"
+  - family-names: "de Paula Martins"
+    given-names: "Lucas"
+  - family-names: "Bethonico Terra"
+    given-names: "Maria Clara"
+  - name-suffix: "Professora Luciana de Nardin"
+    affiliation: "PUC Minas"
+    family-names: "de Nardin"
+    given-names: "Luciana"
 keywords:
-  -
-  -
-repository-code:
+  - "Machine Learning"
+  - "Flask Application"
+repository-code: "https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe7-t1-mudancas-climaticas"
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2024-06-26
